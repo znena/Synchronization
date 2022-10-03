@@ -1,0 +1,19 @@
+{
+	x: -4.5d,
+	y: 0.0d,
+	description: "“降维打击”",
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"97a9308b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a383d9a6",
+		type: "item",
+		items: [{
+			item: "enderio:block_solar_panel"
+		}]
+	}]
+}

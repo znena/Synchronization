@@ -1,0 +1,19 @@
+{
+	x: 6.5d,
+	y: 4.0d,
+	description: "钻石！",
+	text: [
+		""
+	],
+	dependencies: [
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "11d02053",
+		type: "item",
+		items: [{
+			item: "improvedextraction:raw_crystal"
+		}]
+	}]
+}

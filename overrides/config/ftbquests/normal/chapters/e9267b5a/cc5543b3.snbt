@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: 0.0d,
+	description: "要塞之战",
+	dependencies: [
+		"bbc7f99a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0f5ace41",
+		type: "advancement",
+		advancement: "minecraft:story/follow_ender_eye",
+		criterion: ""
+	}]
+}

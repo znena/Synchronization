@@ -1,0 +1,3 @@
+background = addStretchedTexture("top_left", "mainmenu:loadingscreen/main.jpg")
+
+background.setRelRender(1, 1)

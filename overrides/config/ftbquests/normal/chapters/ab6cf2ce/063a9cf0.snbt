@@ -1,0 +1,15 @@
+{
+	x: 9.5d,
+	y: -5.5d,
+	description: "建筑",
+	dependencies: [
+		"4a16471c"
+	],
+	tasks: [{
+		uid: "2a7ab48c",
+		type: "item",
+		items: [{
+			item: "tconstruct:soil"
+		}]
+	}]
+}

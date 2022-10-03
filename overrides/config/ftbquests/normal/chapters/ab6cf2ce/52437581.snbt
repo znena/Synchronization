@@ -1,0 +1,18 @@
+{
+	title: "极低压电路板",
+	x: 8.75d,
+	y: 0.0d,
+	description: "MiV时代",
+	dependencies: [
+		"9350a3c1"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "74cbe6a6",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 40"
+		}]
+	}]
+}

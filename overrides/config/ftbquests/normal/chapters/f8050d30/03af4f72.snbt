@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 3.5d,
+	description: "多方块",
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"1cc411ec"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "696fc608",
+		type: "item",
+		items: [{
+			item: "libvulpes:holoprojector"
+		}]
+	}]
+}

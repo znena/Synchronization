@@ -1,0 +1,22 @@
+{
+	x: 6.5d,
+	y: 2.0d,
+	dependencies: [
+		"c3f7d83f",
+		"201c35e7"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ddc0338f",
+		type: "item",
+		items: [{
+			id: "techreborn:dynamiccell",
+			tag: {
+				Fluid: {
+					FluidName: "fluidberylium",
+					Amount: 1000
+				}
+			}
+		}]
+	}]
+}

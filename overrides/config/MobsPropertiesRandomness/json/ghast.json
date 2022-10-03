@@ -1,0 +1,12 @@
+{
+	"mob_id" : "minecraft:ghast",
+	"attributes": [
+        {
+            "id": "generic.maxHealth",
+            "modifier": {
+                "min": 20,
+                "max": 40
+            }
+        }
+    ]
+}

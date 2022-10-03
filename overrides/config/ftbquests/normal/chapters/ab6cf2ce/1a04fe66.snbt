@@ -1,0 +1,18 @@
+{
+	x: 21.5d,
+	y: 2.0d,
+	description: "魂之召唤",
+	hide_dependency_lines: true,
+	dependencies: [
+		"911a01ca",
+		"128c69c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d2a77f14",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 7"
+		}]
+	}]
+}

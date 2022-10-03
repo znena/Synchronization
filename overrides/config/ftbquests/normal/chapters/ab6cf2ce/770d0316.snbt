@@ -1,0 +1,22 @@
+{
+	title: "低压时代！",
+	x: 12.5d,
+	y: 0.0d,
+	description: "低级机器的基础",
+	text: [
+		"常规的低压电路板。"
+	],
+	dependencies: [
+		"ec536327",
+		"ffc468d0"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "d47b6fef",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 29"
+		}]
+	}]
+}

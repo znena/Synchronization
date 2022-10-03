@@ -1,0 +1,16 @@
+{
+	x: 9.5d,
+	y: -4.0d,
+	description: "ESM",
+	dependencies: [
+		"1cfc5093"
+	],
+	hide: true,
+	tasks: [{
+		uid: "50d43b80",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 3"
+		}]
+	}]
+}

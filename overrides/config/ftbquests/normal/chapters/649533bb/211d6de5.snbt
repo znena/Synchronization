@@ -1,0 +1,19 @@
+{
+	x: 3.5d,
+	y: 4.0d,
+	text: [
+		"",
+		"[即将到来......]"
+	],
+	dependencies: [
+		"c3f7d83f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1b7b33fb",
+		type: "item",
+		items: [{
+			item: "techreborn:dust 1 52"
+		}]
+	}]
+}

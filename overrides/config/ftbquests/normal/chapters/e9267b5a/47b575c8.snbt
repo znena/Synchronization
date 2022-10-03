@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: 1.5d,
+	description: "狱火之堡",
+	text: [
+		"地狱堡垒中的生物强度极高，在拥有硼全套装备和35级经验之前不建议进入。"
+	],
+	dependencies: [
+		"128c69c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "719edaa0",
+		type: "advancement",
+		advancement: "minecraft:nether/find_fortress",
+		criterion: ""
+	}]
+}

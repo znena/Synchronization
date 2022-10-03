@@ -1,0 +1,12 @@
+{
+	"mob_id" : "nuclearcraft:feral_ghoul",
+	"attributes": [
+        {
+            "id": "generic.maxHealth",
+            "modifier": {
+                "min": 40,
+                "max": 120
+            }
+        }
+    ]
+}

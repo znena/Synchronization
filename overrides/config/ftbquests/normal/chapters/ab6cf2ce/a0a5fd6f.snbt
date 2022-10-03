@@ -1,0 +1,39 @@
+{
+	title: "手工打板",
+	x: 12.5d,
+	y: 4.0d,
+	description: "duang~",
+	text: [
+		"制作一把锻锤，代替卷板机在前期制作金属板。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"4623e95f",
+		"5236faf9"
+	],
+	hide: true,
+	tasks: [{
+		uid: "5ab77508",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:refined_iron_hammer"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:lead_hammer"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:bronze_hammer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

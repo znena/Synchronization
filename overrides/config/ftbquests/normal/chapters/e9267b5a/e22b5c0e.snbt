@@ -1,0 +1,19 @@
+{
+	title: "暮色森林",
+	icon: "minecraft:diamond",
+	x: 16.0d,
+	y: 3.0d,
+	description: "踏上新的征途",
+	text: [
+		"即将到来......"
+	],
+	dependencies: [
+		"662508ed"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8078fe16",
+		type: "dimension",
+		dim: -16
+	}]
+}

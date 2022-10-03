@@ -1,0 +1,58 @@
+{
+	icon: "tconstruct:smeltery_controller",
+	x: 5.0d,
+	y: 2.0d,
+	description: "独一无二",
+	text: [
+		"制作一台1x1x1的焦黑冶炼炉。",
+		"然后打造一把属于你自己的工具吧！"
+	],
+	dependencies: [
+		"b7476411"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "53785e7d",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "e71b16bd",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared 1 3"
+		}],
+		count: 2L
+	},
+	{
+		uid: "9d1e64b6",
+		type: "item",
+		items: [{
+			item: "tconstruct:seared_tank"
+		}]
+	},
+	{
+		uid: "42f8c5d9",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "9ca06220",
+		type: "item",
+		items: [{
+			item: "tconstruct:faucet"
+		}]
+	},
+	{
+		uid: "5a39b3f5",
+		type: "item",
+		items: [{
+			item: "tconstruct:casting"
+		}]
+	}]
+}

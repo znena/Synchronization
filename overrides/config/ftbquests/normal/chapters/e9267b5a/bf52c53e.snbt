@@ -1,0 +1,16 @@
+{
+	x: 8.0d,
+	y: 2.25d,
+	description: "诡异的、可怕的",
+	dependencies: [
+		"47b575c8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d7e34c60",
+		type: "item",
+		items: [{
+			item: "minecraft:skull 1 1"
+		}]
+	}]
+}

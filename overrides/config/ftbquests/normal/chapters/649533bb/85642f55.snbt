@@ -1,0 +1,21 @@
+{
+	x: 17.0d,
+	y: -4.0d,
+	description: "便携式能量单元",
+	text: [
+		""
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"c69d7dd4",
+		"ff72d5cf"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9e86171d",
+		type: "item",
+		items: [{
+			item: "techreborn:part"
+		}]
+	}]
+}

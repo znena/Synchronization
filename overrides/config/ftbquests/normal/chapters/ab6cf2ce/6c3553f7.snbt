@@ -1,0 +1,17 @@
+{
+	x: 9.5d,
+	y: -7.0d,
+	description: "传输基础",
+	dependencies: [
+		"063a9cf0",
+		"62b39bb8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "eb7fe0a4",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 4"
+		}]
+	}]
+}

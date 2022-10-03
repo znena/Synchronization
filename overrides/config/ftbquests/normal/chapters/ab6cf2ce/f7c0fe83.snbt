@@ -1,0 +1,20 @@
+{
+	x: 3.5d,
+	y: 0.0d,
+	description: "电力传输 Lv.1",
+	text: [
+		"这能满足你基础的电力传输，",
+		"但在大量电力传输的干路上......还是选择更高级的导线吧。"
+	],
+	dependencies: [
+		"77d01c03"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3204ec5f",
+		type: "item",
+		items: [{
+			item: "techreborn:cable 1 1"
+		}]
+	}]
+}

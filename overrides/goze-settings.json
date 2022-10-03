@@ -1,0 +1,12 @@
+{
+	"this": {
+		"type": "Minecraft Client"
+		"object": {
+			"type": "Minecraft Modpack",
+			"title": "Synchnorization",
+			"version": "0.1 Testing 2",
+			"version-id": 118
+		},
+		"uid": "0-0003-0003"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 1.5d,
+	description: "电力传输 Lv.5",
+	text: [
+		""
+	],
+	dependencies: [
+		"43131194"
+	],
+	hide: true,
+	tasks: [{
+		uid: "bdc3073a",
+		type: "item",
+		items: [{
+			item: "techreborn:cable 1 4"
+		}]
+	}]
+}

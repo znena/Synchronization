@@ -1,0 +1,18 @@
+{
+	x: 18.5d,
+	y: 0.0d,
+	description: "中压入门",
+	dependencies: [
+		"e5b22294",
+		"3a6a38e0"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "fd06a89a",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 41"
+		}]
+	}]
+}

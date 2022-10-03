@@ -1,0 +1,16 @@
+{
+	x: 8.5d,
+	y: -8.5d,
+	description: "自动化传输",
+	dependencies: [
+		"6c3553f7"
+	],
+	hide: true,
+	tasks: [{
+		uid: "fa01ab97",
+		type: "item",
+		items: [{
+			item: "enderio:item_item_conduit"
+		}]
+	}]
+}

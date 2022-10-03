@@ -1,0 +1,27 @@
+{
+	title: "矿物生成 下界 II",
+	icon: "techreborn:ore 1 4",
+	x: 6.0d,
+	y: 3.0d,
+	description: "[Age: Balta]",
+	text: [
+		"Balta阶段的一般矿物分布。",
+		"维度被预设为下界。",
+		"",
+		"名称 | 深度分布 | 矿脉大小 | 稀有度%",
+		"方铅矿石 | 128-160-192 | 9 | 0.4944",
+		"铝土矿石 | 128-255 | 5 | 0.1538",
+		"",
+		"朱砂矿石 | 66-126 | 2 | 0.0651（地狱岩）"
+	],
+	dependencies: [
+		"128c69c4",
+		"201c35e7"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "1044e7dc",
+		type: "checkmark"
+	}]
+}

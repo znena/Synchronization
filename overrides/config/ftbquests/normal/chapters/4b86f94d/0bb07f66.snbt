@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 4.5d,
+	description: "工具的最优解",
+	dependencies: [
+		"c224ad52"
+	],
+	hide: true,
+	tasks: [{
+		uid: "aa62a2c1",
+		type: "item",
+		items: [{
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "electrum"
+			}
+		}]
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	title: "知识：Tcon",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "tconstruct:book"
+	},
+	x: 6.75d,
+	y: -2.5d,
+	description: "手艺人",
+	text: [
+		"解锁关于Tinkers' Construct的知识。"
+	],
+	dependencies: [
+		"62b39bb8"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "0c042554",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 5"
+		}],
+		count: 4L,
+		consume_items: true
+	},
+	{
+		uid: "40f06941",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 7"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "200f0115",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "tcon"
+	}]
+}

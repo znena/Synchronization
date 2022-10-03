@@ -1,0 +1,26 @@
+{
+	title: "终末之地",
+	icon: "minecraft:end_stone",
+	x: 12.5d,
+	y: 0.0d,
+	description: "虚无......",
+	text: [
+		"末影龙的防御力已提升至原有的10倍，攻击也提升至5倍。",
+		"这将是一场恶战。如果你没有充足的准备，几只末影人足以把你送回主世界。",
+		"",
+		"末地（1）伤害系数：",
+		"生物抗性 | Boss抗性 | 生物伤害",
+		"4.0 | 10.0 | 5.0",
+		""
+	],
+	dependencies: [
+		"cc5543b3"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "b7056b6a",
+		type: "dimension",
+		dim: 1
+	}]
+}

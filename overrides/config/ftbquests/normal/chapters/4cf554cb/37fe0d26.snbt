@@ -1,0 +1,21 @@
+{
+	title: "开始",
+	icon: "minecraft:log",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"在这个整合包中，游戏阶段限制了你的认知，",
+		"解锁这些任务以提升你的知识。",
+		"",
+		"注意：本章的所有需求物品都会被消耗"
+	],
+	dependencies: [
+		"6588b893"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "15ebfb18",
+		type: "checkmark"
+	}]
+}

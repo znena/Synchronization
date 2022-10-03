@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	description: "耐热",
+	dependencies: [
+		"1a04fe66"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "2afe4871",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials"
+		}]
+	}]
+}

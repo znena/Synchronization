@@ -1,0 +1,16 @@
+{
+	x: -1.5d,
+	y: -2.0d,
+	dependencies: [
+		"f8f908a9",
+		"201c35e7"
+	],
+	hide: true,
+	tasks: [{
+		uid: "02ac2b27",
+		type: "item",
+		items: [{
+			item: "techreborn:ore 1 9"
+		}]
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	x: 1.0d,
+	y: 6.0d,
+	description: "电力存储 Lv.2",
+	text: [
+		""
+	],
+	dependencies: [
+		"4a74ed6f"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "071edd5e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:lithiumbattery",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

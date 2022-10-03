@@ -1,0 +1,26 @@
+{
+	title: "矿脉分布 II",
+	icon: "techreborn:ore 1 6",
+	x: 9.5d,
+	y: 3.0d,
+	description: "[Age: Balta]",
+	text: [
+		"Balta阶段的矿脉分布。",
+		"",
+		"名称 | 分布 | 矿脉大小 | 每区块生成率%",
+		"方铅矿石 | 地下世界深层 | 192 | 0.11",
+		"",
+		"铝土矿石 | 地狱顶部 | 128 | 0.10",
+		"",
+		"朱砂矿石 | 下界 | 128 | 0.80"
+	],
+	dependencies: [
+		"201c35e7"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "8e8ae331",
+		type: "checkmark"
+	}]
+}

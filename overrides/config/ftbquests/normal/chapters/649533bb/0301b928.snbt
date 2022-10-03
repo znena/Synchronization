@@ -1,0 +1,22 @@
+{
+	x: 22.5d,
+	y: 0.0d,
+	description: "核电工艺",
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"85642f55",
+		"6b0274e3",
+		"af7589d3"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "84ac36f8",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part"
+		}]
+	}]
+}

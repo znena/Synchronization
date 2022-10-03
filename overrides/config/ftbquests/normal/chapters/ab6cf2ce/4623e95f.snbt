@@ -1,0 +1,21 @@
+{
+	title: "精炼铁",
+	x: 3.0d,
+	y: -2.0d,
+	text: [
+		"将粗制的铁金属提纯。",
+		"制作机器需要用到大量的精炼铁。"
+	],
+	dependencies: [
+		"50b45132"
+	],
+	hide: true,
+	tasks: [{
+		uid: "cb9da281",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 19"
+		}],
+		count: 4L
+	}]
+}

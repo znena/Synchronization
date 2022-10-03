@@ -1,0 +1,19 @@
+{
+	x: 14.0d,
+	y: -2.0d,
+	description: "超高压入门",
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"d3f55aed"
+	],
+	hide: true,
+	tasks: [{
+		uid: "73c64c73",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 43"
+		}]
+	}]
+}

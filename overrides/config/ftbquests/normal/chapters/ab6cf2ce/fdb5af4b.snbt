@@ -1,0 +1,23 @@
+{
+	x: 17.5d,
+	y: -2.0d,
+	description: "传输升级",
+	text: [
+		"减少手动制作导线时的损耗。",
+		"耗电量较大。"
+	],
+	dependencies: [
+		"754d41b1",
+		"f7e62660",
+		"770d0316"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "a359614d",
+		type: "item",
+		items: [{
+			item: "techreborn:wire_mill"
+		}]
+	}]
+}

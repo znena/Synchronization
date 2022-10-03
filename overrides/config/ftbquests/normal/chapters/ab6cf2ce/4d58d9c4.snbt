@@ -1,0 +1,25 @@
+{
+	title: "更牢固的支架",
+	x: 20.5d,
+	y: -2.0d,
+	description: "机械方块 Lv.2",
+	text: [
+		"随着科技的发展，基础机械框架已经不能满足一些机器的需求，",
+		"升级至更加坚固基础机械外壳即可承受。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6ccb0c44",
+		"6b6cb8eb",
+		"770d0316"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "f65c4bee",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing"
+		}]
+	}]
+}

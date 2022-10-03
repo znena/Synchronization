@@ -1,0 +1,18 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	description: "高压入门",
+	dependencies: [
+		"cfd9d1f7",
+		"042f4cb8"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "94e85668",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 30"
+		}]
+	}]
+}

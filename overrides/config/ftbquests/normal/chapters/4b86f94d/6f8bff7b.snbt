@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 4.5d,
+	description: "武器的最优解 I",
+	dependencies: [
+		"c224ad52"
+	],
+	hide: true,
+	tasks: [{
+		uid: "34ac7d10",
+		type: "item",
+		items: [{
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "energetic_alloy"
+			}
+		}]
+	}]
+}

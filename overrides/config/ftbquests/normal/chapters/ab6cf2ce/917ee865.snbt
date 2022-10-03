@@ -1,0 +1,16 @@
+{
+	x: 10.5d,
+	y: -8.5d,
+	description: "自动化传输",
+	dependencies: [
+		"6c3553f7"
+	],
+	hide: true,
+	tasks: [{
+		uid: "950a9ac1",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit"
+		}]
+	}]
+}

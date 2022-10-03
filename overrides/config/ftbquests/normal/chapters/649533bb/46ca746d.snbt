@@ -1,0 +1,16 @@
+{
+	x: 6.5d,
+	y: 8.0d,
+	dependencies: [
+		"bb5a996b",
+		"abefeb25"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f1ea235e",
+		type: "item",
+		items: [{
+			item: "techreborn:medium_voltage_su"
+		}]
+	}]
+}

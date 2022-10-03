@@ -1,0 +1,37 @@
+{
+	icon: {
+		id: "techreborn:industrial_blast_furnace",
+		tag: {}
+	},
+	x: 6.25d,
+	y: -2.0d,
+	description: "高压",
+	text: [
+		"准备高炉的材料。"
+	],
+	dependencies: [
+		"8a8037a9",
+		"4d58d9c4",
+		"44ba72b7",
+		"d1334d9e",
+		"ac53e5a5"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "a787e11f",
+		type: "item",
+		items: [{
+			id: "techreborn:industrial_blast_furnace",
+			tag: {}
+		}]
+	},
+	{
+		uid: "478ae9b5",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing"
+		}],
+		count: 34L
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	title: "Balta",
+	icon: {
+		id: "techreborn:industrial_blast_furnace",
+		tag: {}
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

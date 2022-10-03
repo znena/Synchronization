@@ -1,0 +1,16 @@
+{
+	x: 12.5d,
+	y: 4.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"72a64574"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c6496263",
+		type: "item",
+		items: [{
+			item: "libvulpes:productgem"
+		}]
+	}]
+}

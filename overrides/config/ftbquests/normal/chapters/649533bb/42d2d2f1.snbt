@@ -1,0 +1,16 @@
+{
+	x: 6.5d,
+	y: -6.0d,
+	description: "电路板增产",
+	dependencies: [
+		"1cfc5093"
+	],
+	hide: true,
+	tasks: [{
+		uid: "927141bb",
+		type: "item",
+		items: [{
+			item: "techreborn:plates 1 11"
+		}]
+	}]
+}

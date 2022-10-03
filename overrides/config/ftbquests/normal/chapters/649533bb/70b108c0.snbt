@@ -1,0 +1,16 @@
+{
+	x: 9.0d,
+	y: -8.5d,
+	dependencies: [
+		"386b4272"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "13a9f465",
+		type: "item",
+		items: [{
+			item: "techreborn:thermal_generator"
+		}]
+	}]
+}

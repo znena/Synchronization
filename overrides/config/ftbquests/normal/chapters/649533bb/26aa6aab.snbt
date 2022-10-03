@@ -1,0 +1,29 @@
+{
+	x: 17.0d,
+	y: -6.0d,
+	description: "无尽矿工",
+	text: [
+		""
+	],
+	dependencies: [
+		"93b80624",
+		"85642f55",
+		"1da62ea8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "5b1af49a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:advanceddrill",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

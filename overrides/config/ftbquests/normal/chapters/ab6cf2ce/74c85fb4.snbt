@@ -1,0 +1,28 @@
+{
+	title: "床",
+	x: 3.0d,
+	y: 4.0d,
+	description: "漫漫长夜",
+	text: [
+		"制作床以帮住你设置重生点。",
+		"你当然不能利用它度过夜晚。",
+		""
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"50b45132"
+	],
+	hide: true,
+	tasks: [{
+		uid: "afad9b4e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:bed"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

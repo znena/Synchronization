@@ -1,0 +1,24 @@
+{
+	x: -0.5d,
+	y: 0.0d,
+	description: "万恶之源",
+	text: [
+		"制作一把石镐，然后......",
+		"                开始挖矿吧！"
+	],
+	dependencies: [
+		"4a16471c"
+	],
+	tasks: [{
+		uid: "377fb314",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:stone_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

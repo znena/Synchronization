@@ -1,0 +1,31 @@
+{
+	title: "地图 I",
+	icon: "minecraft:paper",
+	x: 1.5d,
+	y: 2.5d,
+	description: "近景",
+	text: [
+		"解锁JourneyMap小地图。"
+	],
+	dependencies: [
+		"37fe0d26"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f3d43891",
+		type: "item",
+		items: [{
+			item: "antiqueatlas:empty_antique_atlas"
+		},
+		{
+			item: "minecraft:map"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "228142bc",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "map_a"
+	}]
+}

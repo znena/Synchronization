@@ -1,0 +1,20 @@
+{
+	x: 12.5d,
+	y: -4.0d,
+	description: "光伏材料",
+	text: [
+		"你可以在红石矿石中发现它。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"04fedc1a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6e340360",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 5"
+		}]
+	}]
+}

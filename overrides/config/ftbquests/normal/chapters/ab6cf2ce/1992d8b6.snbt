@@ -1,0 +1,50 @@
+{
+	title: "木船",
+	x: 16.0d,
+	y: -7.5d,
+	description: "Row Your Boat",
+	text: [
+		"船能大大提升你的远程旅行能力。"
+	],
+	dependencies: [
+		"6b6cb8eb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7990342b",
+		type: "item",
+		items: [{
+			item: "minecraft:boat"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:spruce_boat"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:birch_boat"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:jungle_boat"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:acacia_boat"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:dark_oak_boat"
+		}]
+	}]
+}

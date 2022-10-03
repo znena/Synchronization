@@ -1,0 +1,16 @@
+{
+	x: 4.5d,
+	y: 4.0d,
+	description: "电网核心",
+	dependencies: [
+		"6d3ffb05"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1393e60a",
+		type: "item",
+		items: [{
+			item: "techreborn:low_voltage_su"
+		}]
+	}]
+}

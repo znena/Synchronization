@@ -1,0 +1,84 @@
+// TR: Sync Scripts #18 | 22/10/1
+#loader contenttweaker
+#priority 100
+
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Item as CoTItem;
+import mods.contenttweaker.IItemDestroySpeed;
+//import mods.contenttweaker.MutableItemStack;
+//import mods.contenttweaker.BlockState;
+
+val creative_tab = <creativetab:sync>;
+
+zenClass ItemRegister {
+    zenConstructor(id as string) {
+		this.id = id;
+    }
+	var id as string;
+	var isTool as bool=false;
+	var maxDamage as int=-1;
+	var toolClass as string="";
+	var toolLevel as int=-1;
+	var isMiningTool as bool=false;
+	var miningFunction as IItemDestroySpeed;
+	
+	function tool (maxDamage as int, toolClass as string=null, toolLevel as int=1) as ItemRegister {
+		this.isTool = true;
+		this.maxDamage = maxDamage;
+		if (toolClass) { this.toolClass = toolClass; }
+		this.toolLevel = toolLevel;
+		return this;
+	}
+	
+	function mining (miningFunction as IItemDestroySpeed) as ItemRegister {
+		this.isMiningTool = true;
+		this.miningFunction = miningFunction;
+		return this;
+	}
+	
+//	function speed (miningSpeed as float) as ItemRegister {
+//		val toolClass = this.toolClass;
+//		return this.mining(function (critemStack as MutableItemStack, block as BlockState) as float {
+//			if (block.getBlock().definition.harvestTool==toolClass) {
+//				return miningSpeed;
+//			}
+//			return 1.0;
+//		});
+//	}
+}
+
+val Items = [
+//	ItemRegister("refined_iron_hammer").tool(40),
+//	ItemRegister("lead_hammer").tool(80),
+//	ItemRegister("bronze_hammer").tool(120),
+//	ItemRegister("boron_mortar").tool(100),
+	ItemRegister("boron_nugget"),
+	ItemRegister("calcite_dust"),
+	ItemRegister("conductive_iron_dust"),
+	ItemRegister("conductive_iron_small_dust"),
+	ItemRegister("gold_foil"),
+	ItemRegister("lithium_nugget"),
+	ItemRegister("magnesium_nugget"),
+	ItemRegister("plastic_rode"),
+	ItemRegister("refined_iron_dust"),
+	ItemRegister("rough_energetic_alloy_ingot"),
+	ItemRegister("rough_plastic_plate")
+] as ItemRegister[];
+
+for i in Items {
+	var critem = VanillaFactory.createItem(i.id);
+	critem.creativeTab = creative_tab;
+	if (i.isTool) {
+		critem.setMaxStackSize(1);
+		critem.maxDamage = (i.maxDamage as int);
+		if (i.toolClass!="") {
+			critem.toolClass = i.toolClass as string;
+			critem.toolLevel = i.toolLevel as int;
+			if (i.isMiningTool) {
+				critem.itemDestroySpeed = i.miningFunction as IItemDestroySpeed;
+			}
+		}
+	}
+	critem.register();
+}
+

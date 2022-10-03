@@ -1,0 +1,19 @@
+{
+	title: "冻洋",
+	x: 0.0d,
+	y: -3.0d,
+	description: "和平之地",
+	text: [
+		"冻洋生物群系的地表不会刷新怪物。",
+		"这极有利于前期的生存。"
+	],
+	dependencies: [
+		"4a16471c"
+	],
+	tasks: [{
+		uid: "65122515",
+		type: "biome",
+		icon: "minecraft:ice",
+		biome: "minecraft:frozen_ocean"
+	}]
+}

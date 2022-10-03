@@ -1,0 +1,17 @@
+{
+	x: 13.5d,
+	y: 2.0d,
+	description: "电路基板",
+	dependencies: [
+		"a0a5fd6f",
+		"3edb6b54"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1026b0c8",
+		type: "item",
+		items: [{
+			item: "techreborn:plates 1 22"
+		}]
+	}]
+}

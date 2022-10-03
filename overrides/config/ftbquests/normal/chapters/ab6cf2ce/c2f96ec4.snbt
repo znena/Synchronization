@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: 2.5d,
+	description: "流体存储",
+	text: [
+		"使用桶存储流体太过消耗空间？",
+		"不如试试空单元！"
+	],
+	dependencies: [
+		"305c3bd5"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ade64ad2",
+		type: "item",
+		items: [{
+			item: "techreborn:dynamiccell"
+		}]
+	}]
+}

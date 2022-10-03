@@ -1,0 +1,17 @@
+{
+	x: 20.0d,
+	y: 2.0d,
+	dependencies: [
+		"b5aa070b",
+		"9acc047f"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "21cfac2d",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 17"
+		}]
+	}]
+}

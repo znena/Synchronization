@@ -1,0 +1,25 @@
+{
+	title: "矿物分布 地下世界 II",
+	icon: "techreborn:ore",
+	x: 4.5d,
+	y: 3.0d,
+	description: "[Age: Balta]",
+	text: [
+		"Balta阶段的一般矿物分布。",
+		"维度被预设为地下世界。",
+		"",
+		"名称 | 深度分布 | 矿脉大小 | 稀有度%",
+		"方铅矿石 | 128-128-144 | 3 | 0.0732",
+		"锂矿石 | 0-64-144 | 5 | 0.0732"
+	],
+	dependencies: [
+		"201c35e7",
+		"73a349e8"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "f2853ecf",
+		type: "checkmark"
+	}]
+}

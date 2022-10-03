@@ -1,0 +1,26 @@
+{
+	x: 17.5d,
+	y: 6.0d,
+	description: "电力存储 Lv.5",
+	dependencies: [
+		"ff72d5cf",
+		"af7589d3"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "df576782",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:lapotronicorb",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 4.5d,
+	y: -5.5d,
+	description: "可塑性",
+	dependencies: [
+		"1e6e3ab2"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4a5d776f",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part 1 6"
+		}]
+	}]
+}

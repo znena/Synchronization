@@ -1,0 +1,4 @@
+commands.ts.usage=/ts (ability/gozec)
+commands.ts.ability.damage_buff=Damage Buff Because of Experience： %s%%
+commands.ts.connect_failed=Connecting to Goze Server Failed.
+commands.ts.invalid_args=Invalid Command Parameters: %s.

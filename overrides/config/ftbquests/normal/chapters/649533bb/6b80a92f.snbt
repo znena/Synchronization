@@ -1,0 +1,21 @@
+{
+	x: -1.5d,
+	y: -6.0d,
+	description: "虚空能量",
+	text: [
+		""
+	],
+	dependencies: [
+		"201c35e7",
+		"042f4cb8"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "7dfcae50",
+		type: "item",
+		items: [{
+			item: "minecraft:ender_eye"
+		}]
+	}]
+}

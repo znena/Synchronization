@@ -1,0 +1,26 @@
+{
+	title: "矿物生成 末地",
+	icon: "techreborn:ore 1 8",
+	x: 7.5d,
+	y: 3.0d,
+	description: "[Age: Balta]",
+	text: [
+		"Balta阶段的一般矿物分布。",
+		"维度被预设为末地。",
+		"",
+		"名称 | 矿脉大小 | 稀有度%",
+		"钨矿石 | 1 | 0.0118",
+		"铂矿石 | 1 | 0.0118",
+		"橄榄石矿石 | 2 | 0.0314",
+		"方钠石矿石 |  2 | 0.0236"
+	],
+	dependencies: [
+		"f8f908a9"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "e5d02934",
+		type: "checkmark"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "木材增产",
+	x: 0.0d,
+	y: -2.5d,
+	description: "林业家",
+	text: [
+		"使用铁斧与原木合成以增产木板。"
+	],
+	dependencies: [
+		"50b45132"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d09f6c88",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:iron_axe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 3.0d,
+	description: "凋零山庄",
+	text: [
+		"击杀凋零的选址是个问题。主世界易受到干扰，",
+		"而凋零会被地下世界的能量所增强。"
+	],
+	dependencies: [
+		"bf52c53e"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9958c37c",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}]
+	}]
+}

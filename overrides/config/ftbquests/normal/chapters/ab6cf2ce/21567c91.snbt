@@ -1,0 +1,16 @@
+{
+	x: 7.0d,
+	y: -2.0d,
+	description: "橡胶增产",
+	dependencies: [
+		"52437581"
+	],
+	hide: true,
+	tasks: [{
+		uid: "accd4fd1",
+		type: "item",
+		items: [{
+			item: "techreborn:extractor"
+		}]
+	}]
+}

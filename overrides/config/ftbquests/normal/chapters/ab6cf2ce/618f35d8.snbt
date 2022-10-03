@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: -5.5d,
+	text: [
+		"硼制装备是除钻石以外Amina阶段能获得的最好的装备。"
+	],
+	dependencies: [
+		"62b39bb8",
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "b43c814c",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot 1 5"
+		}]
+	}]
+}

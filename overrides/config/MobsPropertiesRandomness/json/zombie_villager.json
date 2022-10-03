@@ -1,0 +1,19 @@
+{
+	"mob_id" : "minecraft:zombie_villager",
+	"attributes": [
+        {
+            "id": "generic.movementSpeed",
+            "modifier": {
+                "min": 0.08,
+                "max": 0.15
+            }
+        },
+        {
+            "id": "generic.maxHealth",
+            "modifier": {
+                "min": 20,
+                "max": 30
+            }
+        }
+    ]
+}

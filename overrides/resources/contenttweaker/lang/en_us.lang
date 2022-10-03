@@ -1,0 +1,31 @@
+# TR: Sync Lang en_us | 22/9/30
+item.contenttweaker.boron_nugget.name=Boron Nugget
+item.contenttweaker.lithium_nugget.name=Lithium Nugget
+item.contenttweaker.magnesium_nugget.name=Magnesium Nugget
+item.contenttweaker.rough_plastic_plate.name=Rough Plastic Plate
+item.contenttweaker.rough_energetic_alloy_ingot.name=Rough Plastic Plate
+item.contenttweaker.plastic_rode.name=Plastic Rode
+item.contenttweaker.calcite_dust.name=Calcite Dust
+item.contenttweaker.refined_iron_dust.name=Refined Iron Dust
+item.contenttweaker.conductive_iron_dust.name=Conductive Iron Dust
+item.contenttweaker.conductive_iron_small_dust.name=Small Conductive Iron Dust
+item.contenttweaker.gold_foil.name=Gold Foil
+
+item.contenttweaker.boron_mortar.name=Boron Mortar
+item.contenttweaker.bronze_hammer.name=Bronze Hammer
+item.contenttweaker.copper_axe.name=Copper Axe
+item.contenttweaker.copper_pickaxe.name=Copper Pickaxe
+item.contenttweaker.copper_shovel.name=Copper Shovel
+item.contenttweaker.copper_sword.name=Copper Sword
+item.contenttweaker.lead_hammer.name=Lead Hammer
+item.contenttweaker.refined_iron_hammer.name=Refined Iron Hammer
+
+tile.contenttweaker.calcite.name=Calcite
+tile.contenttweaker.basalt.name=Basalt
+tile.contenttweaker.weathered_stone.name=Weathered Stone
+tile.contenttweaker.iron_ore_dust.name=Iron Ore Dust
+tile.contenttweaker.tetrahedrite_ore.name=Tetrahedrite Ore
+tile.contenttweaker.gold_ore.name=Gold Ore
+tile.contenttweaker.diamond_ore.name=Diamond Ore
+tile.contenttweaker.redstone_ore.name=Redstone Ore
+tile.contenttweaker.lapis_ore.name=Lapis Lazuli Ore

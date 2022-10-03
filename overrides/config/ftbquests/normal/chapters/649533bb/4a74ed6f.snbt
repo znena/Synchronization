@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: 4.0d,
+	dependencies: [
+		"201c35e7",
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "aa903cec",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot 1 6"
+		}]
+	}]
+}

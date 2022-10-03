@@ -1,0 +1,41 @@
+{
+	title: "知识：Ciksa",
+	icon: "nuclearcraft:manufactory_idle",
+	x: 13.5d,
+	y: 0.0d,
+	description: "中压时代与核电工艺",
+	text: [
+		"解锁进阶矿物，末影接口，高级火箭基础，通量网络等内容。"
+	],
+	dependencies: [
+		"0301b928",
+		"201c35e7"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "8544b507",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:part"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "d9063564",
+		type: "item",
+		items: [{
+			item: "techreborn:plates 1 38"
+		},
+		{
+			item: "tconstruct:materials 1 50"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "7c81bcb9",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "age_ciksa"
+	}]
+}

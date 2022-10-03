@@ -1,0 +1,40 @@
+{
+	title: "地图 III",
+	icon: "minecraft:book",
+	x: 7.5d,
+	y: 2.5d,
+	description: "X-ray",
+	text: [
+		"解锁JourneyMap路径点。"
+	],
+	dependencies: [
+		"201c35e7",
+		"8170b1cb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7abba839",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_frame 1 1"
+		},
+		{
+			item: "chickenchunks:chunk_loader 1 1"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "4c447228",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 41"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "62ac7724",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "map_c"
+	}]
+}

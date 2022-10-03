@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	description: "工业准备",
+	dependencies: [
+		"6588b893"
+	],
+	hide: true,
+	tasks: [{
+		uid: "eecd0934",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 13"
+		}]
+	}]
+}

@@ -1,0 +1,38 @@
+{
+	icon: "techreborn:industrial_grinder",
+	x: 12.5d,
+	y: 2.0d,
+	description: "终极增产",
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"93b80624",
+		"b15d0460"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "f81c73c7",
+		type: "item",
+		items: [{
+			item: "techreborn:industrial_grinder"
+		}]
+	},
+	{
+		uid: "9548a79a",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing"
+		}],
+		count: 18L
+	},
+	{
+		uid: "23f52a9c",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing 1 1"
+		}],
+		count: 8L
+	}]
+}

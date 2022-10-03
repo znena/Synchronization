@@ -1,0 +1,19 @@
+{
+	"mob_id" : "minecraft:enderman",
+	"attributes": [
+        {
+            "id": "generic.movementSpeed",
+            "modifier": {
+                "min": 0.1,
+                "max": 0.18
+            }
+        },
+        {
+            "id": "generic.maxHealth",
+            "modifier": {
+                "min": 40,
+                "max": 150
+            }
+        }
+    ]
+}

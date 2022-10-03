@@ -1,0 +1,20 @@
+{
+	x: 18.5d,
+	y: 4.0d,
+	description: "电力传输 Lv.3",
+	text: [
+		"它拥有极其良好的导电性能，能够满足你高压机器前的几乎全部需求。",
+		"相应的，它的造价会高一点......"
+	],
+	dependencies: [
+		"3a6a38e0"
+	],
+	hide: true,
+	tasks: [{
+		uid: "49d9f50c",
+		type: "item",
+		items: [{
+			item: "techreborn:cable 1 2"
+		}]
+	}]
+}

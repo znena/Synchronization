@@ -1,0 +1,16 @@
+{
+	x: 17.5d,
+	y: -4.0d,
+	description: "更好的铜系合金",
+	dependencies: [
+		"5bb5eda0"
+	],
+	hide: true,
+	tasks: [{
+		uid: "388b1e72",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 1"
+		}]
+	}]
+}

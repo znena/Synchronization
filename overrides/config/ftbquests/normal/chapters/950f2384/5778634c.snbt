@@ -1,0 +1,28 @@
+{
+	title: "等待",
+	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "minecraft:cake"
+	},
+	x: 0.0d,
+	y: 4.0d,
+	description: "科技的尽头......",
+	text: [
+		"如果你看到了这个任务，那代表你的进度已超过Goze制作组。",
+		"如果你有对整合包的意见可以反馈到github上我们的工作室。",
+		"",
+		"谢谢游玩！",
+		"（截至0.1 Testing 2，Goze Club 150h+的工作成果）"
+	],
+	dependencies: [
+		"0aa09c79"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "9a5a440c",
+		type: "checkmark"
+	}]
+}

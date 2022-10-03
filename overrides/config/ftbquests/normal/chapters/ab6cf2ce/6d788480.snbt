@@ -1,0 +1,34 @@
+{
+	title: "宝石切割",
+	x: 7.5d,
+	y: 2.5d,
+	description: "加工工艺",
+	text: [
+		"挖掘下来的宝石原石纯度过低，无法用于合成，",
+		"使用这套切割工具以打磨至可使用的宝石。"
+	],
+	dependencies: [
+		"ec536327",
+		"1aa8c4a6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4cb01772",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "improvedextraction:cutting_tool"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6af09a25",
+		type: "item",
+		items: [{
+			item: "improvedextraction:cutting_table"
+		}]
+	}]
+}

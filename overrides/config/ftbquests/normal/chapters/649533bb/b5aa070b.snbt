@@ -1,0 +1,28 @@
+{
+	icon: "techreborn:vacuum_freezer",
+	x: 17.5d,
+	y: 2.0d,
+	text: [
+		"冷却钨钢锭。"
+	],
+	dependencies: [
+		"b15d0460"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "bb6bd84a",
+		type: "item",
+		items: [{
+			item: "techreborn:vacuum_freezer"
+		}]
+	},
+	{
+		uid: "7633409b",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing 1 1"
+		}],
+		count: 9L
+	}]
+}

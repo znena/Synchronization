@@ -1,0 +1,23 @@
+{
+	title: "矿脉分布 III",
+	icon: "techreborn:ore 1 1",
+	x: 9.5d,
+	y: 4.5d,
+	description: "[Age: Ciksa]",
+	text: [
+		"Ciksa阶段的矿脉分布。",
+		"",
+		"名称 | 分布 | 矿脉大小 | 每区块生成率%",
+		"铀矿石 | 下界顶部 | 192 | 0.05",
+		"铱矿石 | 下界顶部 | 48 | 0.02"
+	],
+	dependencies: [
+		"0aa09c79"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "f8b90837",
+		type: "checkmark"
+	}]
+}

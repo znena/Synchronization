@@ -1,0 +1,18 @@
+{
+	x: 23.0d,
+	y: -4.0d,
+	description: "替代钢",
+	hide_dependency_lines: true,
+	dependencies: [
+		"4623e95f",
+		"911a01ca"
+	],
+	hide: true,
+	tasks: [{
+		uid: "15643c42",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_endergy_ingot"
+		}]
+	}]
+}

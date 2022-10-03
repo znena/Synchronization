@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: -8.5d,
+	dependencies: [
+		"9cd5dd03"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "e9f2d06d",
+		type: "item",
+		items: [{
+			item: "techreborn:wind_mill"
+		}]
+	}]
+}

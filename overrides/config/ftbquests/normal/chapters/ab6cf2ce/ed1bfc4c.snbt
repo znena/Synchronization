@@ -1,0 +1,19 @@
+{
+	x: 25.5d,
+	y: 0.0d,
+	description: "纳米工艺",
+	dependencies: [
+		"4d58d9c4",
+		"327fcd4e",
+		"f820acda"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "97a6b45c",
+		type: "item",
+		items: [{
+			item: "techreborn:compressor"
+		}]
+	}]
+}

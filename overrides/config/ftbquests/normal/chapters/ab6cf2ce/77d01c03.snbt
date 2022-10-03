@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	description: "更好的工具",
+	text: [
+		"铜作为工具材料和导线材料都是不错的选择。"
+	],
+	dependencies: [
+		"6588b893"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4db82b7a",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 4"
+		}]
+	}]
+}

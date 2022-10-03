@@ -1,0 +1,41 @@
+{
+	title: "知识：Amina",
+	icon: "techreborn:solid_fuel_generator",
+	x: 4.5d,
+	y: 0.0d,
+	description: "初电力时代",
+	text: [
+		"解锁电力合金、存储升级、初级物流等内容。",
+		"同时是解锁JourneyMap全屏地图的前置条件。"
+	],
+	dependencies: [
+		"37fe0d26",
+		"5ededc2d"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "611b10cb",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:rebattery",
+			tag: {
+				energy: 40000
+			}
+		},
+		{
+			item: "improvedextraction:raw_crystal"
+		}],
+		consume_items: true,
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "3d4fc30b",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "age_amina"
+	}]
+}

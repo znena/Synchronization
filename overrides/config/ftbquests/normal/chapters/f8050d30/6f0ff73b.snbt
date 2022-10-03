@@ -1,0 +1,20 @@
+{
+	title: "通知",
+	x: 2.0d,
+	y: -1.5d,
+	description: "Ciksa",
+	text: [
+		"这一阶段正在准备制作中......",
+		"如果你看到了这里，你可以开始自由探索整合包之外的内容，",
+		"或者保存存档以在以后的版本继续发展。"
+	],
+	dependencies: [
+		"0aa09c79"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "d350ab70",
+		type: "checkmark"
+	}]
+}

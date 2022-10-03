@@ -1,0 +1,26 @@
+{
+	title: "矿物分布 地下世界 III",
+	icon: "nuclearcraft:ore 1 4",
+	x: 4.5d,
+	y: 4.5d,
+	description: "[Age: Ciksa]",
+	text: [
+		"Ciksa阶段的一般矿物分布。",
+		"维度被预设为地下世界。",
+		"",
+		"名称 | 深度分布 | 矿脉大小 | 稀有度%",
+		"铀矿石 | 64-128-144 | 4 | 0.1074",
+		"镁矿石 | 128-144-144 | 2 | 0.0391",
+		"铱矿石 | 128-128-144 | 1 | 0.0049"
+	],
+	dependencies: [
+		"0aa09c79",
+		"73a349e8"
+	],
+	hide: true,
+	optional: true,
+	tasks: [{
+		uid: "788c31eb",
+		type: "checkmark"
+	}]
+}

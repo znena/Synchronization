@@ -1,0 +1,20 @@
+{
+	x: 20.0d,
+	y: -8.125d,
+	description: "无尽能源",
+	hide_dependency_lines: true,
+	dependencies: [
+		"85642f55",
+		"9320ddb2",
+		"4b13916d"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "22a67098",
+		type: "item",
+		items: [{
+			item: "techreborn:dragon_egg_syphon"
+		}]
+	}]
+}

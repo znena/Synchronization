@@ -1,0 +1,19 @@
+{
+	x: 7.5d,
+	y: -7.0d,
+	description: "更坚硬的石头",
+	text: [
+		""
+	],
+	dependencies: [
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "44f88272",
+		type: "item",
+		items: [{
+			item: "contenttweaker:basalt"
+		}]
+	}]
+}

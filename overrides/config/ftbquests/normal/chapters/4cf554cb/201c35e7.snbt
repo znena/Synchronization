@@ -1,0 +1,41 @@
+{
+	title: "知识：Balta",
+	icon: "techreborn:compressor",
+	x: 9.0d,
+	y: 0.0d,
+	description: "低压时代->中压时代",
+	text: [
+		"解锁中压电力机器，核电工艺等内容。",
+		"同时是解锁JourneyMap标记点与死亡标记点的前置条件。"
+	],
+	dependencies: [
+		"e4be1ef8",
+		"62b39bb8",
+		"ed1bfc4c"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "a7d37417",
+		type: "item",
+		items: [{
+			item: "techreborn:plates 1 5"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "de8d94dc",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:ingot 1 5"
+		}],
+		count: 8L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "0f5ab391",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "age_balta"
+	}]
+}

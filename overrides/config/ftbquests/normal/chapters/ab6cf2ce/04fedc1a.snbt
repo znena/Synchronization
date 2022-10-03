@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: 2.0d,
+	description: "红石通量？",
+	text: [
+		"前往地下世界挖掘红石矿石。",
+		"或者，击杀几只女巫？（你会很快后悔的）"
+	],
+	dependencies: [
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "06ced156",
+		type: "item",
+		items: [{
+			item: "minecraft:redstone"
+		}]
+	}]
+}

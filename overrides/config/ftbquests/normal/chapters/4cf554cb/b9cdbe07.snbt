@@ -1,0 +1,28 @@
+{
+	title: "地图 IV",
+	icon: "antiqueatlas:empty_antique_atlas",
+	x: 10.5d,
+	y: 2.5d,
+	description: "死而复生",
+	text: [
+		"解锁JourneyMap死亡路径点功能。"
+	],
+	dependencies: [
+		"1170b0b3"
+	],
+	hide: true,
+	tasks: [{
+		uid: "bd1bcdb6",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing 1 2"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "e642781d",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "map_d"
+	}]
+}

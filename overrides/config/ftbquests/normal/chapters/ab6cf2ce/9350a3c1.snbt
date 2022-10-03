@@ -1,0 +1,21 @@
+{
+	x: 7.5d,
+	y: -4.0d,
+	description: "第一块合金",
+	text: [
+		"用手将精炼铁粉与通量粉尘混合在一起，",
+		"便可以得到导电铁粉。但这一过程会有较大的损耗（75%），",
+		"合金炉可以免去这种损耗。"
+	],
+	dependencies: [
+		"f16f904b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "09e273d2",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 4"
+		}]
+	}]
+}

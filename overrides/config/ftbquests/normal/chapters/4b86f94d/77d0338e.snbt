@@ -1,0 +1,17 @@
+{
+	x: 7.0d,
+	y: 0.0d,
+	description: "定义你的盔甲",
+	dependencies: [
+		"6456b889"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "1841f990",
+		type: "item",
+		items: [{
+			item: "conarm:armorstation"
+		}]
+	}]
+}

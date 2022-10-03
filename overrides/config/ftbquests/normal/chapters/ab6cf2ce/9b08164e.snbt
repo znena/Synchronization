@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 1.875d,
+	description: "电力磨粉",
+	text: [
+		"硼矿物较为稀有，且硬度有限，无法研磨一些材料。",
+		"使用电动磨粉机已改进磨粉技术。"
+	],
+	dependencies: [
+		"1d7b263f",
+		"93b80624",
+		"52437581"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "c5f3d73b",
+		type: "item",
+		items: [{
+			item: "techreborn:grinder"
+		}]
+	}]
+}

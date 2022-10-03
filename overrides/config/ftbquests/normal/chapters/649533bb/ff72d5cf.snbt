@@ -1,0 +1,26 @@
+{
+	x: 12.5d,
+	y: 6.0d,
+	description: "电力存储 Lv.4",
+	dependencies: [
+		"bb5a996b",
+		"ea9eb11c"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "3de66990",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:lapotroncrystal",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

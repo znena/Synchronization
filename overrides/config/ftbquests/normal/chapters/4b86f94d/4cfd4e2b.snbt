@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 6.5d,
+	description: "武器的最优解 II",
+	dependencies: [
+		"6f8bff7b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3bec261d",
+		type: "item",
+		items: [{
+			id: "tconstruct:sword_blade",
+			tag: {
+				Material: "vibrant_alloy"
+			}
+		}]
+	}]
+}

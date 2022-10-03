@@ -1,0 +1,19 @@
+{
+	x: -1.5d,
+	y: 1.0d,
+	description: "电力传输 Lv.4",
+	text: [
+		""
+	],
+	dependencies: [
+		"472c54ec"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4b068653",
+		type: "item",
+		items: [{
+			item: "techreborn:cable 1 3"
+		}]
+	}]
+}

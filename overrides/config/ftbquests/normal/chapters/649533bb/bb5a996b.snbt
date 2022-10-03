@@ -1,0 +1,30 @@
+{
+	x: 6.5d,
+	y: 6.0d,
+	description: "电力存储 Lv.3",
+	text: [
+		""
+	],
+	dependencies: [
+		"8a04ba18",
+		"5aef9d4f",
+		"efc8b1d1"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "497e993c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:energycrystal",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

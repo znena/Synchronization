@@ -1,0 +1,22 @@
+{
+	x: 6.75d,
+	y: 0.0d,
+	description: "工业革命",
+	text: [
+		"你终于掌握了发电的方法。",
+		"下一步，就是自动化！"
+	],
+	dependencies: [
+		"6d3ffb05",
+		"6ccb0c44"
+	],
+	hide: true,
+	size: 1.5d,
+	tasks: [{
+		uid: "d516e08b",
+		type: "item",
+		items: [{
+			item: "techreborn:solid_fuel_generator"
+		}]
+	}]
+}

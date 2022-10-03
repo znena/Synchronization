@@ -1,0 +1,30 @@
+{
+	title: "地图 II",
+	icon: "minecraft:filled_map",
+	x: 4.5d,
+	y: 2.5d,
+	description: "远景",
+	text: [
+		"解锁JourneyMap全屏地图。"
+	],
+	dependencies: [
+		"19ad0823",
+		"62b39bb8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d65fccfc",
+		type: "item",
+		items: [{
+			item: "minecraft:diamond"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "518c9340",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "map_b"
+	}]
+}

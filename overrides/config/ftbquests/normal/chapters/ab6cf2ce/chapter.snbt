@@ -1,0 +1,7 @@
+{
+	title: "Amina",
+	icon: "techreborn:solid_fuel_generator",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

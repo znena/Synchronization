@@ -1,0 +1,19 @@
+{
+	x: -2.5d,
+	y: 0.0d,
+	description: "末影动力",
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"3ff2ffd0"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a70f1952",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 11"
+		}]
+	}]
+}

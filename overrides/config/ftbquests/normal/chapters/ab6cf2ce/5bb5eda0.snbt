@@ -1,0 +1,22 @@
+{
+	title: "闪锌矿",
+	x: 17.5d,
+	y: -5.5d,
+	description: "小心岩浆",
+	text: [
+		"闪锌矿石广泛分布于下界。",
+		"这种矿物是锌金属在前期的唯一来源。"
+	],
+	dependencies: [
+		"128c69c4",
+		"62b39bb8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3c12dd4f",
+		type: "item",
+		items: [{
+			item: "techreborn:dust 1 50"
+		}]
+	}]
+}

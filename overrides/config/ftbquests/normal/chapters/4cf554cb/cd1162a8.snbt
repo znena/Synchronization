@@ -1,0 +1,30 @@
+{
+	title: "知识：Psi",
+	icon: "psi:material 1 1",
+	x: 13.5d,
+	y: -2.5d,
+	description: "集成编辑技术",
+	text: [
+		"解锁关于Psi的知识。"
+	],
+	dependencies: [
+		"0aa09c79"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "4fb7a981",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:satelliteprimaryfunction"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "b9d0108e",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "psi"
+	}]
+}

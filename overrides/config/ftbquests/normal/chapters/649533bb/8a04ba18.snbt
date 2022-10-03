@@ -1,0 +1,15 @@
+{
+	x: 5.5d,
+	y: 4.0d,
+	dependencies: [
+		"c3f7d83f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "892fc8d4",
+		type: "item",
+		items: [{
+			item: "techreborn:dust 1 31"
+		}]
+	}]
+}

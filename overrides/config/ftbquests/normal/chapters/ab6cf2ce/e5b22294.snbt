@@ -1,0 +1,19 @@
+{
+	title: "冷却单元",
+	x: 17.5d,
+	y: 2.0d,
+	description: "水冷系统",
+	hide_dependency_lines: true,
+	dependencies: [
+		"c2f96ec4",
+		"9b08164e"
+	],
+	hide: true,
+	tasks: [{
+		uid: "682db1f6",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 10"
+		}]
+	}]
+}

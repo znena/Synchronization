@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	description: "雕刻家",
+	text: [
+		"欢迎来到工匠之魂。"
+	],
+	dependencies: [
+		"ffc468d0"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "f9e02fea",
+		type: "item",
+		items: [{
+			item: "tconstruct:pattern"
+		}]
+	}]
+}

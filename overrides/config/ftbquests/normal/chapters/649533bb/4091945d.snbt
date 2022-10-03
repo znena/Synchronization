@@ -1,0 +1,20 @@
+{
+	x: 7.5d,
+	y: -4.0d,
+	description: "高级电路板增产 A",
+	text: [
+		"使用高级电路零件和加厚中子反射板可以直接组装高级电路板，",
+		"相对原始的合成方法可以节约2x中级电路板。"
+	],
+	dependencies: [
+		"fb11558f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0afc3196",
+		type: "item",
+		items: [{
+			item: "techreborn:part 1 42"
+		}]
+	}]
+}

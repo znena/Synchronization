@@ -1,0 +1,211 @@
+VERSION = 18;
+
+!for more documentation see: https://github.com/CD4017BE/VerticallyStackedDimensions/wiki
+
+!Time in seconds to keep a chunk loaded after it was requested by a portal (set to 0 to disable chunk persistence).
+!This is to avoid lagg by chunks being frequently loaded and unloaded again.
+chunk_load_time = 30.0;
+!maximum time in seconds a chunk can be kept continously loaded via portal requests without a player, spawnarea or modded chunkloader nearby.
+!This is to prevent players from buiding exploit contraptions to keep chunks loaded indefinitely
+cont_load_time = 300.0;
+
+!Whether the "Dimension Stack" button should be enabled during world creation. (disable for modpacks where you don't want players messing with the configuration)
+dimstack_editor = false;
+
+!set to true to disable creation of nether portals (through obsidian ignition)
+disable_nether_portal = true;
+
+!whether to generate ceiling portals in open sky dimensions only when & where needed. (It's highly recommended to leave this at default true for performance reasons)
+ceil_on_demand = true;
+
+!this lets you retroactively generate portals into a world that was originally created without this mod. The generation in old chunks works similar to "ceiling on demand".
+!Setting this to 2 (instead of true) will also re run any "bedrockRepl" or "blockRepl" settings for that chunk.
+retrogen_portals = false;
+
+!number > 0 makes floor portals become solid if a player gets teleported upwards onto it to prevent falling back and specifies the interval in ticks to check if the player is still there before resynchronizing the portal.
+create_plattform = 25;
+
+!Uncomment the following command to ignore all config options related to world generation and dimension stack structure and instead use the given file in "config/cd4017be/" as preset for creating new worlds.
+!The file can be obtained either from the save directory of an already created world or via the "export" button in the in-game Dimension Stack Editor.
+override_default = "dimensionstack.dat";
+
+!set these to true to disable vanilla ore-generation in overworld and nether. 
+disable_coal = false;
+disable_diamond = false;
+disable_emerald = false;
+disable_gold = false;
+disable_iron = false;
+disable_lapis = false;
+disable_redstone = false;
+disable_quartz = false;
+
+{
+	!nubers of octaves for global noise generators, used for add("noiseField" ...)
+	custom_noise_octaves = [4]#;
+}
+
+dim_ceiling = 255; !default height at which ceiling portals are generated
+
+INIT() {
+	!crafting recipe for Dimensional Pipe:
+	!add("shaped", <result>, <pattern>, <ingredients>...);
+	add("shaped", it("tile.dim_pipe", 1), "010/020/010", "obsidian", "gemQuartz", it("minecraft:hopper"));
+	
+	!stacking dimensions on top of each other so they get connected via portals (order bottom to top):
+	!add("dimstack", [<dimId>...]#);
+	add("dimstack", [-1, -6, 0, -5]#); !overworld on top of nether (rem '!' to enable)
+	
+	!creating new dimensions for the game:
+	!add("dimension", <id>, <generator>, <biome>, <horizonHeight>, <cloudHeight>, <hasSkylight>, <waterEvaporates>, <isNetherlike>, <hasSky&Clouds>, <hasFog>, [<voidFogY>, <fogRed>, <fogGreen>, <fogBlue>]#);
+	add("dimension", -5, "void", nil, 0.0, 16.0, true, false, false, true, false, [256, 0.753, 0.847, 1.0]#); !example for standard sky dimension to be put above the overworld (with matching biomes)
+	add("dimension", -6, "void", "minecraft:extreme_hills", 256, NaN, false, false, true, false, true, [32, 0.6, 0.5, 0.4]#); !example for underground/cave dimension. Blocks/terrain must still be added via "basic_layer", "nether", etc.  
+	
+	!dimension data for automatic transition layer generation:
+	!dim_transitions:<dimId> = [<botMaterial>, <botLayerSize>, <topMaterial>, <topLayerSize>];
+	dim_transitions:0 = ["minecraft:stone", 4, "minecraft:air", 0]; !Overworld has stone at floor and air at ceiling
+	dim_transitions:-1 = ["minecraft:netherrack", 4, "minecraft:netherrack", 4]; !The Nether has netherrack at both floor and ceiling
+	dim_transitions:1 = ["minecraft:air", 0, "minecraft:air", 0]; !The End has air at both floor and ceiling
+	
+	dim_transitions:-5 = ["minecraft:air", 0, "minecraft:air", 0];
+	dim_transitions:-6 = ["minecraft:stone", 4, "minecraft:stone", 4];
+	
+	!lower the portal ceiling height in the nether
+	!dim_ceiling:-1 = 127;
+	!Note: setting dim_ceiling to negative values will flip the dimension upside down, meaning that floor and ceiling portals are swapped.
+	
+	!prevent bedrock from being generated in ...
+	rem_block_gen:0 = "minecraft:bedrock"; !the Overworld (rem '!' to enable)
+	rem_block_gen:-1 = "minecraft:bedrock"; !the Nether (rem '!' to enable)
+	
+	!register a new noise field
+	!add("noiseField", <name>, <genIdx>, <horGrid>, <vertGrid>, <horScale>, <vertScale>);
+	add("noiseField", "main", 0, 4, 4, 1.0, 1.0); !"main" is used internally for dimension transition layers
+	
+	!custom barrier block properties (block id is "dimstack:bedrock@<id>")
+	!there are 16 (ids 0 ... 15) different blocks available for use in progression barrier layers
+	!barrier_block:<id> = [[<breakingTools>...], <harvestLvl>, <hardness>, <expResistance>, <WhitherProof>];
+	!barrier_block:0 = [[it("minecraft:dragon_egg"), it("minecraft:nether_star")], "pickaxe:3", 8.0, /0, true]; !example
+	!barrier_block:13 = [it("minecraft:diamond_hoe"), "axe:3", 1.5, /0, true]; !another example (makes the diamond hoe usefull)
+	!barrier_block:12 = [it("minecraft:obsidian"), "pickaxe:3", 8.0, /0, true]; !fiery bedrock as nether progression gate
+	
+	!custom block layers
+	!add("basicLayer", <dimId>, <blockstate>, [<startY>, <minY>, <maxY>, <endY>]#);
+	!add("basicLayer", -1, "dimstack:bedrock@12", [118, 120, 121, 123]#); !put our fiery bedrock at nether celing just below the portal (rem '!' to enable)
+	
+	!remove the '!' in the following line to enable top half nether generation
+	netherTop();
+	
+	miningDimension();
+	oregen();
+}
+
+netherTop() {
+	add("basicLayer", -1, "minecraft:stone", [128, 255]#);
+	
+	add("basicLayer", -1, "minecraft:obsidian", [123, 127, 129, 133]#);
+	
+	add("oregen", -1, "minecraft:stone", 10, 33, "minecraft:dirt", "even", [128, 255]#);
+	add("oregen", -1, "minecraft:stone", 8, 33, "minecraft:gravel", "even", [128, 255]#);
+	add("oregen", -1, "minecraft:stone", 10, 33, "minecraft:stone@1", "even", [128, 255]#);
+	add("oregen", -1, "minecraft:stone", 10, 33, "minecraft:stone@3", "even", [128, 255]#);
+	add("oregen", -1, "minecraft:stone", 10, 33, "minecraft:stone@5", "even", [128, 255]#);
+}
+
+miningDimension() {
+	add("basicLayer", -6, "minecraft:stone", [0, 255]#);
+	
+	!add("nether", -6, ["minecraft:stone", "minecraft:water", "minecraft:stone", "minecraft:stone", "minecraft:stone", "minecraft:gravel"], [64, 76, 92, 144]#, 12);
+	!add("nether", -6, ["minecraft:stone", "minecraft:water", "minecraft:sandstone", "minecraft:sand", "minecraft:stone", "minecraft:gravel"], [128, 160, 192, 256]#, 32);
+	
+	add("basicLayer", -6, "minecraft:bedrock", [156, 157, 159, 160]#);
+	add("oregen", -6, "minecraft:bedrock", 0.1, 64, "minecraft:stone", "center", [156, 158, 160]#);
+	
+	add("oregen", -6, "minecraft:stone", 10, 33, "minecraft:dirt", "even", [128, 255]#);
+	add("oregen", -6, "minecraft:stone", 8, 33, "minecraft:gravel", "even", [128, 255]#);
+	add("oregen", -6, "minecraft:stone", 10, 33, "minecraft:stone@1", "even", [128, 255]#);
+	add("oregen", -6, "minecraft:stone", 10, 33, "minecraft:stone@3", "even", [128, 255]#);
+	add("oregen", -6, "minecraft:stone", 10, 33, "minecraft:stone@5", "even", [128, 255]#);
+}
+
+oregen() {
+	!Overworld
+	add("oregen", 0, "minecraft:stone", 3,  24, "contenttweaker:calcite",  "center", [12, 36, 48]#);
+	add("oregen", 0, "minecraft:stone", 12, 12, "minecraft:iron_ore",      "center", [112, 144, 180]#);
+
+	!Mining Dimension
+	!add("oregen", -6, "minecraft:stone", 0.8, 192, "minecraft:air",  "even", [32, 224]#);
+	
+	add("oregen", -6, "minecraft:stone", 0.0036, 256, "minecraft:coal_ore", "even", [160, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.0036, 160, "minecraft:iron_ore", "even", [160, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.0075, 192, "techreborn:ore2",    "even", [160, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.0042, 160, "techreborn:ore2@1",  "even", [160, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.0075, 192, "nuclearcraft:ore@5", "even", [160, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.0185, 256, "contenttweaker:tetrahedrite_ore", "even", [160, 255]#);
+	
+	add("oregen", -6, "minecraft:stone", 0.0048, 192, "contenttweaker:gold_ore",   "even", [0, 160]#);
+	add("oregen", -6, "minecraft:stone", 0.0009,  64, "contenttweaker:diamond_ore","even", [0, 160]#);
+	add("oregen", -6, "minecraft:stone", 0.0011, 192, "techreborn:ore",       "even", [0, 160]#);
+	add("oregen", -6, "minecraft:stone", 0.0017, 256, "techreborn:ore@12",    "even", [0, 160]#);
+	add("oregen", -6, "minecraft:stone", 0.017,  320, "contenttweaker:iron_ore_dust", "even", [0, 160]#);
+	
+	add("oregen", -6, "minecraft:stone", 11,  7, "contenttweaker:diamond_ore",  "center", [0, 0, 160]#);
+	add("oregen", -6, "minecraft:stone", 32,  8, "contenttweaker:redstone_ore", "center", [0, 156, 224]#);
+	add("oregen", -6, "minecraft:stone", 16,  4, "contenttweaker:lapis_ore",    "center", [0, 64, 224]#);
+	add("oregen", -6, "minecraft:stone", 18,  8, "contenttweaker:gold_ore",     "center", [64, 128, 255]#);
+	add("oregen", -6, "minecraft:stone", 58, 16, "minecraft:iron_ore",     "even", [0, 255]#);
+	add("oregen", -6, "minecraft:stone", 80, 16, "minecraft:coal_ore",     "even", [0, 255]#);
+		
+	add("oregen", -6, "minecraft:stone",  60, 12, "techreborn:ore2",    "center", [0, 192, 255]#);   !copper
+	add("oregen", -6, "minecraft:stone",  46, 10, "techreborn:ore2@1",  "center", [0, 176, 255]#);   !tin
+	add("oregen", -6, "minecraft:stone",   1,  3, "techreborn:ore",     "center", [128, 128, 144]#); !galena
+	add("oregen", -6, "minecraft:stone", 0.2,  1, "techreborn:ore@1",   "center", [128, 128, 144]#); !iridium
+	add("oregen", -6, "minecraft:stone",   1,  2, "techreborn:ore@2",   "center", [128, 144, 144]#); !ruby
+	add("oregen", -6, "minecraft:stone",   3,  3, "techreborn:ore@3",   "center", [0, 0, 32]#);      !sapphire
+	!-bauxite
+	add("oregen", -6, "minecraft:stone",  40, 10, "techreborn:ore@12",  "center", [0, 144, 255]#);   !lead
+	add("oregen", -6, "minecraft:stone",  34,  6, "techreborn:ore@13",  "center", [0, 96, 255]#);    !silver
+	add("oregen", -6, "minecraft:stone", 5.5,  4, "nuclearcraft:ore@3", "center", [64, 128, 144]#);  !uranium
+	!-thorium
+	add("oregen", -6, "minecraft:stone",  30,  5, "nuclearcraft:ore@5", "center", [32, 192, 255]#);  !boron
+	add("oregen", -6, "minecraft:stone",   6,  5, "nuclearcraft:ore@6", "center", [0, 64, 160]#);    !lithium
+	add("oregen", -6, "minecraft:stone", 0.8,  2, "nuclearcraft:ore@7", "center", [128, 144, 144]#); !magnesium
+	
+	add("oregen", -6, "minecraft:lava",  0.25, 144, "minecraft:lava",          "even", [0, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.55,  72, "contenttweaker:calcite",  "even", [160, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.25, 108, "contenttweaker:basalt",   "center", [0, 64, 255]#);
+	
+	!Nether Top
+	add("oregen", -1, "minecraft:stone", 0.0002, 48, "techreborn:ore@1",   "even", [144, 255]#);
+	add("oregen", -1, "minecraft:stone", 0.0007,  96, "techreborn:ore@2",   "even", [144, 255]#);
+	add("oregen", -1, "minecraft:stone", 0.0006, 128, "techreborn:ore@3",   "even", [144, 255]#);
+	add("oregen", -1, "minecraft:stone", 0.001,  128, "techreborn:ore@4",   "even", [144, 255]#);
+	add("oregen", -1, "minecraft:stone", 0.001,  144, "techreborn:ore@13",  "even", [144, 255]#);
+	add("oregen", -1, "minecraft:stone", 0.0005, 192, "nuclearcraft:ore@3", "even", [144, 255]#);
+	
+	add("oregen", -1, "minecraft:stone", 14,  8, "contenttweaker:diamond_ore",  "center", [128, 144, 255]#);
+	add("oregen", -1, "minecraft:stone", 14,  8, "contenttweaker:redstone_ore", "center", [144, 160, 255]#);
+	add("oregen", -1, "minecraft:stone", 10,  5, "contenttweaker:lapis_ore",    "center", [144, 240, 255]#);
+	add("oregen", -1, "minecraft:stone", 10,  9, "contenttweaker:gold_ore",     "center", [128, 176, 240]#);
+	add("oregen", -1, "minecraft:stone", 40, 12, "minecraft:iron_ore",     "even", [128, 255]#);
+	add("oregen", -1, "minecraft:stone", 40, 18, "minecraft:coal_ore",     "even", [128, 255]#);
+		
+	add("oregen", -1, "minecraft:stone",  32, 12, "techreborn:ore2",    "center", [144, 216, 255]#); !copper
+	add("oregen", -1, "minecraft:stone",  28, 10, "techreborn:ore2@1",  "center", [144, 232, 255]#); !tin
+	add("oregen", -1, "minecraft:stone",   9,  9, "techreborn:ore",     "center", [128, 160, 192]#); !galena
+	add("oregen", -1, "minecraft:stone", 1.5,  3, "techreborn:ore@1",   "center", [128, 128, 192]#); !iridium
+	add("oregen", -1, "minecraft:stone",  10,  4, "techreborn:ore@2",   "center", [128, 144, 224]#); !ruby
+	add("oregen", -1, "minecraft:stone",   9,  4, "techreborn:ore@3",   "center", [176, 224, 255]#); !sapphire
+	add("oregen", -1, "minecraft:stone",  10,  5, "techreborn:ore@4",   "even", [128, 255]#);        !bauxite
+	add("oregen", -1, "minecraft:stone",  15, 12, "techreborn:ore@12",  "center", [176, 216, 255]#); !lead
+	add("oregen", -1, "minecraft:stone",  20, 10, "techreborn:ore@13",  "center", [144, 232, 255]#); !silver
+	add("oregen", -1, "minecraft:stone",   9,  8, "nuclearcraft:ore@3", "center", [128, 128, 224]#); !uranium
+	add("oregen", -1, "minecraft:stone",   3,  4, "nuclearcraft:ore@4", "center", [128, 144, 224]#); !thorium
+	add("oregen", -1, "minecraft:stone",  21,  6, "nuclearcraft:ore@5", "center", [128, 224, 255]#); !boron
+	add("oregen", -1, "minecraft:stone",  16,  6, "nuclearcraft:ore@6", "center", [128, 144, 255]#); !lithium
+	add("oregen", -1, "minecraft:stone",   9,  4, "nuclearcraft:ore@7", "center", [128, 144, 240]#); !magnesium
+	
+	!Nether
+	add("oregen", -1, "minecraft:netherrack", 0.02,  128, "techreborn:ore@5", "even", [0, 128]#);
+	add("oregen", -1, "minecraft:netherrack", 0.008, 128, "techreborn:ore@6", "center", [0, 32, 128]#);
+	add("oregen", -1, "minecraft:netherrack", 0.003, 128, "techreborn:ore@7", "center", [0, 64, 128]#);
+}

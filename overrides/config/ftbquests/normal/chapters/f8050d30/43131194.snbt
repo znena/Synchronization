@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"[即将到来......]"
+	],
+	dependencies: [
+		"0301b928",
+		"16f2b0e3"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "02d855c3",
+		type: "item",
+		items: [{
+			item: "nuclearcraft:alloy_furnace_idle"
+		}]
+	}]
+}

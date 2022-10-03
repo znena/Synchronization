@@ -1,0 +1,7 @@
+{
+	title: "Ciksa",
+	icon: "nuclearcraft:pressurizer_idle",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

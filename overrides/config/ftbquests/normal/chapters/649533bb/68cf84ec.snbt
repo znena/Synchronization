@@ -1,0 +1,17 @@
+{
+	x: 12.0d,
+	y: -6.0d,
+	description: "简单的铝处理",
+	dependencies: [
+		"201c35e7",
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "fb88f9c8",
+		type: "item",
+		items: [{
+			item: "techreborn:ore 1 4"
+		}]
+	}]
+}

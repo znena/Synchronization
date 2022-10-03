@@ -1,0 +1,20 @@
+{
+	x: 23.0d,
+	y: -2.0d,
+	description: "增产电路板",
+	dependencies: [
+		"f820acda",
+		"1ae2a48e",
+		"4d58d9c4",
+		"f7e62660"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "ec71d2f9",
+		type: "item",
+		items: [{
+			item: "techreborn:assembling_machine"
+		}]
+	}]
+}

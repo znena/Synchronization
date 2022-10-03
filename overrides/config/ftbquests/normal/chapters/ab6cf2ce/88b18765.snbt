@@ -1,0 +1,19 @@
+{
+	x: 4.5d,
+	y: -4.0d,
+	description: "更好的熔炉",
+	text: [
+		"更高效、更节能。"
+	],
+	dependencies: [
+		"4623e95f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "893de39d",
+		type: "item",
+		items: [{
+			item: "techreborn:iron_furnace"
+		}]
+	}]
+}

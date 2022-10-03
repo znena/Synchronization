@@ -1,0 +1,16 @@
+{
+	x: 10.5d,
+	y: 4.0d,
+	description: "磨具",
+	dependencies: [
+		"a0a5fd6f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "aafbd7b7",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 9"
+		}]
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 11.0d,
+	y: -7.5d,
+	dependencies: [
+		"675615ad"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a0b9b2b4",
+		type: "item",
+		items: [{
+			item: "techreborn:reinforced_glass"
+		}]
+	}]
+}

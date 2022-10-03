@@ -1,0 +1,16 @@
+{
+	x: 4.5d,
+	y: -1.0d,
+	description: "机械方块 Lv.1",
+	dependencies: [
+		"4623e95f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1b59784b",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_frame"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 14.0d,
+	y: -7.5d,
+	description: "抱歉，今天不行",
+	dependencies: [
+		"6b6cb8eb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "22ed284f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "minecraft:shield"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

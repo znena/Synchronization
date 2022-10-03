@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 1.5d,
+	description: "高级火箭",
+	text: [
+		"AdvancedRocketry组的基础原件。"
+	],
+	dependencies: [
+		"6b0274e3",
+		"af7589d3"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d7be0119",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:satelliteprimaryfunction"
+		}]
+	}]
+}

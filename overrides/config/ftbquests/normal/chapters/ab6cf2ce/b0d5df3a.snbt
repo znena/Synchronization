@@ -1,0 +1,24 @@
+{
+	x: 9.0d,
+	y: -4.0d,
+	description: "电力熔炼",
+	text: [
+		"可用来合成合金炉。",
+		"",
+		"警告：耗电量极高！建议在铁炉中烧炼物品。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"88b18765",
+		"04fedc1a",
+		"5236faf9"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8c44f4d5",
+		type: "item",
+		items: [{
+			item: "techreborn:electric_furnace"
+		}]
+	}]
+}

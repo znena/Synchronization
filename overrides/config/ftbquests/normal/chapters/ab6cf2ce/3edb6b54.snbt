@@ -1,0 +1,18 @@
+{
+	x: 14.5d,
+	y: 4.0d,
+	description: "极速",
+	hide_dependency_lines: true,
+	dependencies: [
+		"911a01ca",
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8aaa430e",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 5"
+		}]
+	}]
+}

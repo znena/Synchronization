@@ -1,0 +1,20 @@
+{
+	title: "太阳能 I",
+	x: 12.5d,
+	y: -2.0d,
+	description: "永恒能量",
+	dependencies: [
+		"62b39bb8",
+		"a0e828fb",
+		"770d0316"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "608e0613",
+		type: "item",
+		items: [{
+			item: "techreborn:solar_panel"
+		}]
+	}]
+}

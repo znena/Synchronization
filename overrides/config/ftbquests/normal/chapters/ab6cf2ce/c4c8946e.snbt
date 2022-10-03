@@ -1,0 +1,17 @@
+{
+	x: 22.5d,
+	y: 4.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"50b45132",
+		"73a349e8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "fc1939ef",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 9"
+		}]
+	}]
+}

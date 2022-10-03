@@ -1,0 +1,20 @@
+{
+	x: 1.0d,
+	y: 3.0d,
+	description: "领航者",
+	text: [
+		"指路石可以帮助你进行快速的远距离传送，",
+		"只不过要消耗一点经验。"
+	],
+	dependencies: [
+		"4a16471c"
+	],
+	hide_text_until_complete: true,
+	tasks: [{
+		uid: "2003b638",
+		type: "item",
+		items: [{
+			item: "waystones:waystone"
+		}]
+	}]
+}

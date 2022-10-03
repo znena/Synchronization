@@ -1,0 +1,19 @@
+{
+	title: "同步化",
+	icon: "minecraft:grass",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"欢迎来到 Synchronization！",
+		"",
+		"这是一个测试版本（0.1 Testing II）...",
+		"整合包正在完善中，作者会积极回复github中的反馈。",
+		""
+	],
+	size: 2.0d,
+	optional: true,
+	tasks: [{
+		uid: "b61b28ed",
+		type: "checkmark"
+	}]
+}

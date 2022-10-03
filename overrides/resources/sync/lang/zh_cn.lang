@@ -1,0 +1,3 @@
+commands.ts.ability.damage_buff=因经验等级获得的伤害加成： %s%%
+commands.ts.connect_failed=连接至服务器失败！
+commands.ts.invalid_args=无效的命令参数： %s.

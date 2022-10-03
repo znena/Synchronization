@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	description: "无中生有",
+	dependencies: [
+		"44ba72b7",
+		"8a8037a9",
+		"21567c91"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "8c5ccf36",
+		type: "item",
+		items: [{
+			item: "techreborn:industrial_centrifuge"
+		}]
+	}]
+}

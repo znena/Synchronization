@@ -1,0 +1,24 @@
+{
+	x: 23.0d,
+	y: -5.5d,
+	description: "挖矿工具（",
+	dependencies: [
+		"1ae2a48e"
+	],
+	hide: true,
+	tasks: [{
+		uid: "02612d87",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:irondrill",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

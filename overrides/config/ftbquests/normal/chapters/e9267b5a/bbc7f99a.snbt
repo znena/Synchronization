@@ -1,0 +1,16 @@
+{
+	x: 8.0d,
+	y: 0.75d,
+	description: "火神之血",
+	dependencies: [
+		"47b575c8"
+	],
+	hide: true,
+	tasks: [{
+		uid: "08abb3ea",
+		type: "item",
+		items: [{
+			item: "minecraft:blaze_powder"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "屠龙者",
+	x: 16.0d,
+	y: 0.0d,
+	description: "结束了？",
+	text: [
+		"你战胜了末影龙。",
+		"从此，你可以自由地开采末地的矿物核探索末地城中的宝藏。"
+	],
+	dependencies: [
+		"f8f908a9"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ab3d6100",
+		type: "kill",
+		entity: "minecraft:ender_dragon",
+		value: 1L
+	}]
+}

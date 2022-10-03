@@ -1,0 +1,32 @@
+{
+	title: "经验存储",
+	x: 20.5d,
+	y: 4.0d,
+	description: "附魔救星",
+	text: [
+		"使用经验棒对储罐右击以取出经验，潜行右击以存入经验。"
+	],
+	dependencies: [
+		"1a04fe66",
+		"c4c8946e"
+	],
+	hide: true,
+	tasks: [{
+		uid: "85bf222e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "enderio:item_xp_transfer"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "21ee6484",
+		type: "item",
+		items: [{
+			item: "enderio:block_tank"
+		}]
+	}]
+}

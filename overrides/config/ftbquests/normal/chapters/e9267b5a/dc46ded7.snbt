@@ -1,0 +1,20 @@
+{
+	x: -1.0d,
+	y: 3.0d,
+	description: "远程自动化",
+	text: [
+		"节点载入器可以帮助你保持一个区块的加载。",
+		"你也可以将它升级至区块加载器以加载较大的区域。"
+	],
+	dependencies: [
+		"4a16471c"
+	],
+	hide_text_until_complete: true,
+	tasks: [{
+		uid: "f3e70c25",
+		type: "item",
+		items: [{
+			item: "chickenchunks:chunk_loader 1 1"
+		}]
+	}]
+}

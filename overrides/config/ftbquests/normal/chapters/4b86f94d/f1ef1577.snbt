@@ -1,0 +1,17 @@
+{
+	x: 9.375d,
+	y: 1.875d,
+	description: "终极材料",
+	dependencies: [
+		"c224ad52"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "f2d5dc4e",
+		type: "item",
+		items: [{
+			item: "tconstruct:ingots 1 2"
+		}]
+	}]
+}

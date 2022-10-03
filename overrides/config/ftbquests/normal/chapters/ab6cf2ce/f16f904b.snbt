@@ -1,0 +1,27 @@
+{
+	x: 7.5d,
+	y: -5.5d,
+	description: "手动磨粉",
+	text: [
+		"硼研钵可以在前期代替磨粉机，",
+		"你只需要将研钵和矿物锭放在合成栏里，",
+		"就可以将锭磨成对应的粉。"
+	],
+	dependencies: [
+		"618f35d8",
+		"aa0026eb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "532de355",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "contenttweaker:boron_mortar"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

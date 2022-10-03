@@ -1,0 +1,15 @@
+{
+	x: 5.5d,
+	y: 0.0d,
+	dependencies: [
+		"44ba72b7"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a1b86b14",
+		type: "item",
+		items: [{
+			item: "techreborn:rolling_machine"
+		}]
+	}]
+}

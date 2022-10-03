@@ -1,0 +1,25 @@
+{
+	icon: "techreborn:implosion_compressor",
+	x: 15.0d,
+	y: 2.0d,
+	dependencies: [
+		"b15d0460"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "6aad9852",
+		type: "item",
+		items: [{
+			item: "techreborn:implosion_compressor"
+		}]
+	},
+	{
+		uid: "ed4fb0fd",
+		type: "item",
+		items: [{
+			item: "techreborn:machine_casing 1 1"
+		}],
+		count: 27L
+	}]
+}

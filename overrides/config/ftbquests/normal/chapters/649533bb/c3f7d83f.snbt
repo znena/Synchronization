@@ -1,0 +1,22 @@
+{
+	x: 4.5d,
+	y: 2.0d,
+	description: "变废为宝",
+	text: [
+		""
+	],
+	dependencies: [
+		"44ba72b7",
+		"8a8037a9",
+		"21567c91"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "9f9810fd",
+		type: "item",
+		items: [{
+			item: "techreborn:industrial_electrolyzer"
+		}]
+	}]
+}

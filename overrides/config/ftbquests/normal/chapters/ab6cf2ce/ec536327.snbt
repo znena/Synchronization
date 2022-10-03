@@ -1,0 +1,17 @@
+{
+	x: 10.5d,
+	y: 0.0d,
+	description: "青铜时代",
+	dependencies: [
+		"911a01ca",
+		"5ededc2d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "32f01093",
+		type: "item",
+		items: [{
+			item: "techreborn:ingot 1 2"
+		}]
+	}]
+}

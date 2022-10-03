@@ -1,0 +1,23 @@
+{
+	title: "基岩粉",
+	x: 0.0d,
+	y: 0.0d,
+	description: "末影接口",
+	text: [
+		"使用钨钢在高炉中与基岩粉反应以复制基岩粉。"
+	],
+	dependencies: [
+		"0aa09c79",
+		"6b0274e3"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "9ea155b0",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 20"
+		}],
+		count: 6L
+	}]
+}

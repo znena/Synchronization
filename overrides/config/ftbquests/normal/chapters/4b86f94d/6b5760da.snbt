@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	description: "进阶合成",
+	text: [
+		"不想再忍受合成时间？试试合成站吧！"
+	],
+	dependencies: [
+		"ccc9fa59"
+	],
+	hide: true,
+	tasks: [{
+		uid: "23f8fee9",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables"
+		}]
+	}]
+}

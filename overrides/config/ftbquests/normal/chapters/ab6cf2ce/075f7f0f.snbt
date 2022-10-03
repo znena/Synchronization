@@ -1,0 +1,19 @@
+{
+	x: 10.5d,
+	y: -4.0d,
+	description: "电力传输 Lv.2",
+	text: [
+		"适中的选择：导电性能够好，造价也足够便宜。"
+	],
+	dependencies: [
+		"ec536327"
+	],
+	hide: true,
+	tasks: [{
+		uid: "54b2df6b",
+		type: "item",
+		items: [{
+			item: "techreborn:cable"
+		}]
+	}]
+}
