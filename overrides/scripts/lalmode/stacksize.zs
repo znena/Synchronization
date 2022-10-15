@@ -1,4 +1,4 @@
-// TR: Sync Scripts #22 | 22/10/1
+// TR: Sync Scripts #22 | 22/10/15
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -89,7 +89,27 @@ val Stacksizes = {
 		<enderio:block_dark_steel_ladder>,
 		<ore:paneGlass>,
 		<ore:treeSapling>,
-		<ore:vine>
+		<ore:vine>,
+		<minecraft:waterlily>,
+		
+		<techreborn:cable>,
+		<techreborn:cable:1>,
+		<techreborn:cable:2>,
+		<techreborn:cable:3>,
+		<techreborn:cable:4>,
+		<techreborn:cable:5>,
+		<techreborn:cable:6>,
+		<techreborn:cable:7>,
+		<techreborn:cable:8>,
+		<enderio:item_item_conduit>,
+		<enderio:item_liquid_conduit>,
+		<enderio:item_liquid_conduit:1>,
+		<enderio:item_liquid_conduit:2>,
+		<enderio:item_power_conduit>,
+		<enderio:item_power_conduit:1>,
+		<enderio:item_power_conduit:2>,
+		<enderio:item_redstone_conduit>,
+		<enderio:item_data_conduit>
 	],
 	24 : [
 		<enderio:item_alloy_ball:*>
@@ -108,6 +128,7 @@ val Stacksizes = {
 		<libvulpes:productnugget:*>,
 		
 		<minecraft:torch>,
+		<minecraft:stick>,
 		<improvedextraction:rock:*>,
 		<improvedextraction:small_rock>,
 		<improvedextraction:ore_fragment:*>,

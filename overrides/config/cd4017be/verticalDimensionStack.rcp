@@ -94,8 +94,8 @@ INIT() {
 	
 	!remove the '!' in the following line to enable top half nether generation
 	netherTop();
-	
 	miningDimension();
+	
 	oregen();
 }
 
@@ -112,7 +112,10 @@ netherTop() {
 }
 
 miningDimension() {
-	add("basicLayer", -6, "minecraft:stone", [0, 255]#);
+	add("basicLayer", -6, "minecraft:stone", [0, 253]#);
+	add("basicLayer", -6, "minecraft:bedrock", [254, 254]#);
+	add("basicLayer", -6, "minecraft:lava", [255, 255]#);
+	dim_ceiling:-6 = 253;
 	
 	!add("nether", -6, ["minecraft:stone", "minecraft:water", "minecraft:stone", "minecraft:stone", "minecraft:stone", "minecraft:gravel"], [64, 76, 92, 144]#, 12);
 	!add("nether", -6, ["minecraft:stone", "minecraft:water", "minecraft:sandstone", "minecraft:sand", "minecraft:stone", "minecraft:gravel"], [128, 160, 192, 256]#, 32);
@@ -149,7 +152,7 @@ oregen() {
 	add("oregen", -6, "minecraft:stone", 0.017,  320, "contenttweaker:iron_ore_dust", "even", [0, 160]#);
 	
 	add("oregen", -6, "minecraft:stone", 11,  7, "contenttweaker:diamond_ore",  "center", [0, 0, 160]#);
-	add("oregen", -6, "minecraft:stone", 32,  8, "contenttweaker:redstone_ore", "center", [0, 156, 224]#);
+	add("oregen", -6, "minecraft:stone", 26,  7, "contenttweaker:redstone_ore", "center", [0, 156, 224]#);
 	add("oregen", -6, "minecraft:stone", 16,  4, "contenttweaker:lapis_ore",    "center", [0, 64, 224]#);
 	add("oregen", -6, "minecraft:stone", 18,  8, "contenttweaker:gold_ore",     "center", [64, 128, 255]#);
 	add("oregen", -6, "minecraft:stone", 58, 16, "minecraft:iron_ore",     "even", [0, 255]#);
@@ -162,7 +165,7 @@ oregen() {
 	add("oregen", -6, "minecraft:stone",   1,  2, "techreborn:ore@2",   "center", [128, 144, 144]#); !ruby
 	add("oregen", -6, "minecraft:stone",   3,  3, "techreborn:ore@3",   "center", [0, 0, 32]#);      !sapphire
 	!-bauxite
-	add("oregen", -6, "minecraft:stone",  40, 10, "techreborn:ore@12",  "center", [0, 144, 255]#);   !lead
+	add("oregen", -6, "minecraft:stone",  34,  9, "techreborn:ore@12",  "center", [0, 144, 255]#);   !lead
 	add("oregen", -6, "minecraft:stone",  34,  6, "techreborn:ore@13",  "center", [0, 96, 255]#);    !silver
 	add("oregen", -6, "minecraft:stone", 5.5,  4, "nuclearcraft:ore@3", "center", [64, 128, 144]#);  !uranium
 	!-thorium
