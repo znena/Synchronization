@@ -1,16 +1,16 @@
 {
 	"this": {
 		"type": "Git Builder",
-		"version": "0.1 Testing 2",
-		"version-id": 3
+		"version": "0.1.0-beta.7",
+		"version-id": 4
 		"objects" : [
 			{
 				"type": "Minecraft Client"
 				"object": {
 					"type": "Minecraft Modpack",
 					"title": "Synchnorization",
-					"version": "0.1 Testing 2",
-					"version-id": 118
+					"version": "0.1.0-beta.7",
+					"version-id": 120
 				},
 				"uid": "0-0003-0003"
 			}

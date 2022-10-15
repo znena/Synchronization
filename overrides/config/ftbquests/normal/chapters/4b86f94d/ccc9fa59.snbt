@@ -6,7 +6,8 @@
 		"欢迎来到工匠之魂。"
 	],
 	dependencies: [
-		"ffc468d0"
+		"ffc468d0",
+		"e4be1ef8"
 	],
 	hide: true,
 	size: 1.25d,

@@ -3,7 +3,8 @@
 	y: 2.0d,
 	description: "耐热",
 	dependencies: [
-		"1a04fe66"
+		"1a04fe66",
+		"e4be1ef8"
 	],
 	hide: true,
 	size: 1.25d,

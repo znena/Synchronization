@@ -1,4 +1,4 @@
-// TR: Sync Scripts #26 | 22/10/2
+// TR: Sync Scripts #26 | 22/10/14
 #priority 98
 
 import crafttweaker.item.IItemStack;
@@ -15,21 +15,21 @@ for od, is in Removes {
 
 
 val Adds = {
-	<ore:stone> : [<contenttweaker:basalt>, <contenttweaker:weathered_stone>],
+	<ore:stone> : [<contenttweaker:weathered_stone>],
 	<ore:stoneBasalt> : [<contenttweaker:basalt>],
 	<ore:stoneCalcite> : [<contenttweaker:calcite>],
 	<ore:nuggetBoron> : [<contenttweaker:boron_nugget>],
 	<ore:nuggetLithium> : [<contenttweaker:lithium_nugget>],
 	<ore:nuggetMagnesium> : [<contenttweaker:magnesium_nugget>],
 	<ore:dustRefinedIron> : [<contenttweaker:refined_iron_dust>],
-	<ore:oredustIron> : [<contenttweaker:iron_ore_dust>],
+	<ore:oreMagnetite> : [<contenttweaker:iron_ore_dust>],
 	<ore:oreTetrahedrite> : [<contenttweaker:tetrahedrite_ore>],
 	<ore:oreGold> : [<contenttweaker:gold_ore>],
 	<ore:oreDiamond> : [<contenttweaker:diamond_ore>],
 	<ore:oreRedstone> : [<contenttweaker:redstone_ore>],
 	<ore:oreLapis> : [<contenttweaker:lapis_ore>],
-	
 	<ore:dustPurifiedCarbon> : [<enderio:item_material:23>],
+	
 	<ore:circuitT1> : [<techreborn:part:40>],
 	<ore:circuitT2> : [<techreborn:part:29>],
 	<ore:circuitT3> : [<techreborn:part:41>],

@@ -1,4 +1,4 @@
-// TR: Sync Scripts #31 | 22/10/2
+// TR: Sync Scripts #31 | 22/10/14
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -26,6 +26,48 @@ val ShapedRecipes = {
 		[[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
 		 [<ore:cobblestone>, <ore:plateRefinedIron>, <ore:cobblestone>],
 		 [<ore:cobblestone>, <ore:dustRedstone>, <ore:cobblestone>]]
+	],
+	<minecraft:trapdoor> : [
+		[[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+		 [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]
+	],
+	<minecraft:iron_door> : [
+		[[<ore:ingotIron>, <ore:ingotIron>],
+		 [<ore:ingotIron>, <ore:ingotIron>],
+		 [<ore:ingotIron>, <ore:ingotIron>]]
+	],
+	<minecraft:wooden_door> : [
+		[[<minecraft:planks>, <minecraft:planks>],
+		 [<minecraft:planks>, <minecraft:planks>],
+		 [<minecraft:planks>, <minecraft:planks>]]
+	],
+	<minecraft:spruce_door> : [
+		[[<minecraft:planks:1>, <minecraft:planks:1>],
+		 [<minecraft:planks:1>, <minecraft:planks:1>],
+		 [<minecraft:planks:1>, <minecraft:planks:1>]]
+	],
+	<minecraft:birch_door> : [
+		[[<minecraft:planks:2>, <minecraft:planks:2>],
+		 [<minecraft:planks:2>, <minecraft:planks:2>],
+		 [<minecraft:planks:2>, <minecraft:planks:2>]]
+	],
+	<minecraft:jungle_door> : [
+		[[<minecraft:planks:3>, <minecraft:planks:3>],
+		 [<minecraft:planks:3>, <minecraft:planks:3>],
+		 [<minecraft:planks:3>, <minecraft:planks:3>]]
+	],
+	<minecraft:acacia_door> : [
+		[[<minecraft:planks:4>, <minecraft:planks:4>],
+		 [<minecraft:planks:4>, <minecraft:planks:4>],
+		 [<minecraft:planks:4>, <minecraft:planks:4>]]
+	],
+	<minecraft:dark_oak_door> : [
+		[[<minecraft:planks:5>, <minecraft:planks:5>],
+		 [<minecraft:planks:5>, <minecraft:planks:5>],
+		 [<minecraft:planks:5>, <minecraft:planks:5>]]
+	],
+	<minecraft:paper> : [
+		[[<minecraft:reeds>, <minecraft:reeds>, <minecraft:reeds>]]
 	]
 } as IIngredient[][][][IItemStack];
 

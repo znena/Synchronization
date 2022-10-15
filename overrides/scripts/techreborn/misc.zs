@@ -1,4 +1,4 @@
-// TR: Sync Scripts #5 | 22/10/2
+// TR: Sync Scripts #5 | 22/10/15
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -31,6 +31,14 @@ val Recipes_shaped = {
 		[[null, <techreborn:cable:5>, null],
 		 [<techreborn:plates:28>, <contenttweaker:lithium_nugget>, <techreborn:plates:28>],
 		 [<techreborn:plates:28>, <contenttweaker:lithium_nugget>, <techreborn:plates:28>]],
+	<techreborn:energycrystal> :
+		[[<ore:dustManganese>, <ore:dustPlatinum>, <ore:dustManganese>],
+		 [<ore:dustPlatinum>, <ore:itemVibrantCrystal>, <ore:dustPlatinum>],
+		 [<ore:dustManganese>, <ore:dustPlatinum>, <ore:dustManganese>]],
+	<techreborn:lapotroncrystal> :
+		[[<techreborn:energycrystal>, <ore:circuitT4>, <techreborn:energycrystal>],
+		 [<ore:itemVibrantCrystal>, <libvulpes:productgem>, <ore:itemVibrantCrystal>],
+		 [<techreborn:energycrystal>, <ore:itemVibrantCrystal>, <techreborn:energycrystal>]],
 	<minecraft:golden_apple> :
 		[[<contenttweaker:gold_foil>, <contenttweaker:gold_foil>, <contenttweaker:gold_foil>],
 		 [<contenttweaker:gold_foil>, <minecraft:apple>, <contenttweaker:gold_foil>],

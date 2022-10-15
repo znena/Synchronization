@@ -1,7 +1,7 @@
 // TR: Sync Scripts #1
 #priority 1000
 
-global pack_version as string = "0.1 Testing 2";
+global pack_version as string = "0.1 Testing III Pre";
 
 global mode as string = "normal";
 
