@@ -8,6 +8,7 @@
 		"解锁JourneyMap路径点。"
 	],
 	dependencies: [
+		"f820acda",
 		"201c35e7",
 		"8170b1cb"
 	],

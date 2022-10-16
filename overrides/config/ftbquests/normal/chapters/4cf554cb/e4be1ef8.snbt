@@ -13,7 +13,9 @@
 		"解锁关于Tinkers' Construct的知识。"
 	],
 	dependencies: [
-		"62b39bb8"
+		"1a04fe66",
+		"62b39bb8",
+		"3edb6b54"
 	],
 	hide: true,
 	size: 1.25d,

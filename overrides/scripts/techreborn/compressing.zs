@@ -1,4 +1,4 @@
-// TR: Sync Scripts #50 | 22/9/30
+// TR: Sync Scripts #50 | 22/10/16
 #priority 1
 
 import crafttweaker.item.IItemStack;
@@ -8,7 +8,7 @@ import scripts.utils.eu_cost_multiplier;
 
 val Recipes = {
 	<ore:ingotTungstenstel> : <techreborn:plates:33>,
-	<minecraft:redstone> * 2 : <fluxnetworks:flux>,
+	<minecraft:redstone> : <fluxnetworks:flux>,
 	<ore:plateGold> : <contenttweaker:gold_foil>,
 	<minecraft:wheat> * 3 : <nuclearcraft:graham_cracker>
 } as IItemStack[IIngredient];

@@ -1,4 +1,4 @@
-// TR: Sync Scripts #22 | 22/10/15
+// TR: Sync Scripts #22 | 22/10/16
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -11,6 +11,7 @@ val Stacksizes = {
 		<improvedextraction:ore_cluster:*>,
 		<ore:blockGlass>,
 		<ore:treeLeaves>,
+		<tconstruct:soil>,
 		
 		<ore:fusedQuartz>,
 		<ore:fusedGlass>,

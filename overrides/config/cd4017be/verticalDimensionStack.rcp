@@ -121,7 +121,7 @@ miningDimension() {
 	!add("nether", -6, ["minecraft:stone", "minecraft:water", "minecraft:sandstone", "minecraft:sand", "minecraft:stone", "minecraft:gravel"], [128, 160, 192, 256]#, 32);
 	
 	add("basicLayer", -6, "minecraft:bedrock", [156, 157, 159, 160]#);
-	add("oregen", -6, "minecraft:bedrock", 0.1, 64, "minecraft:stone", "center", [156, 158, 160]#);
+	add("oregen", -6, "minecraft:bedrock", 0.1, 80, "minecraft:stone", "center", [156, 158, 160]#);
 	
 	add("oregen", -6, "minecraft:stone", 10, 33, "minecraft:dirt", "even", [128, 255]#);
 	add("oregen", -6, "minecraft:stone", 8, 33, "minecraft:gravel", "even", [128, 255]#);
@@ -169,13 +169,13 @@ oregen() {
 	add("oregen", -6, "minecraft:stone",  34,  6, "techreborn:ore@13",  "center", [0, 96, 255]#);    !silver
 	add("oregen", -6, "minecraft:stone", 5.5,  4, "nuclearcraft:ore@3", "center", [64, 128, 144]#);  !uranium
 	!-thorium
-	add("oregen", -6, "minecraft:stone",  30,  5, "nuclearcraft:ore@5", "center", [32, 192, 255]#);  !boron
+	add("oregen", -6, "minecraft:stone",  34,  5, "nuclearcraft:ore@5", "center", [32, 192, 255]#);  !boron
 	add("oregen", -6, "minecraft:stone",   6,  5, "nuclearcraft:ore@6", "center", [0, 64, 160]#);    !lithium
 	add("oregen", -6, "minecraft:stone", 0.8,  2, "nuclearcraft:ore@7", "center", [128, 144, 144]#); !magnesium
 	
-	add("oregen", -6, "minecraft:lava",  0.25, 144, "minecraft:lava",          "even", [0, 255]#);
 	add("oregen", -6, "minecraft:stone", 0.55,  72, "contenttweaker:calcite",  "even", [160, 255]#);
-	add("oregen", -6, "minecraft:stone", 0.25, 108, "contenttweaker:basalt",   "center", [0, 64, 255]#);
+	add("oregen", -6, "minecraft:stone", 0.35, 108, "contenttweaker:basalt",   "center", [0, 64, 255]#);
+	add("oregen", -6, "minecraft:lava",   0.4, 144, "minecraft:lava",          "center", [0, 32, 255]#);
 	
 	!Nether Top
 	add("oregen", -1, "minecraft:stone", 0.0002, 48, "techreborn:ore@1",   "even", [144, 255]#);

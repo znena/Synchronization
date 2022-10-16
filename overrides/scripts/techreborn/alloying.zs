@@ -1,4 +1,4 @@
-// TR: Sync Scripts #23 | 22/10/2
+// TR: Sync Scripts #23 | 22/10/16
 #priority 1
 
 import crafttweaker.item.IItemStack;
@@ -49,7 +49,7 @@ val Recipes = {
 	<enderio:item_alloy_nugget:1> * 2 : [
 		[<ore:ingotConductiveIron>, <contenttweaker:rough_energetic_alloy_ingot> * 2]
 	],
-	<enderio:item_alloy_nugget:7> * 3 : [
+	<enderio:item_alloy_nugget:7> * 4 : [
 		[<ore:ingotAdvancedAlloy>, <minecraft:soul_sand> * 2]
 	],
 	<enderio:item_alloy_nugget:9> * 3 : [
@@ -70,7 +70,7 @@ val Recipes = {
 		[<enderio:item_alloy_endergy_ingot> * 2, <ore:ingotRedstoneAlloy>]
 	],
 	<enderio:block_fused_quartz> : [
-		[<minecraft:quartz> * 8, <minecraft:quartz> * 8]
+		[<minecraft:quartz> * 6, <minecraft:quartz> * 6]
 	],
 	<enderio:item_alloy_nugget:2> * 3 : [
 		[<enderio:item_alloy_ingot:1>, <minecraft:ender_eye>],
@@ -93,7 +93,7 @@ var Time = {
 	<enderio:item_alloy_nugget:4> * 2 : [1200, 1200],
 	<contenttweaker:rough_energetic_alloy_ingot> : [1200, 200],
 	<enderio:item_alloy_nugget:1> * 2 : [1200],
-	<enderio:item_alloy_nugget:7> * 3 : [2400],
+	<enderio:item_alloy_nugget:7> * 4 : [2400],
 	<enderio:item_alloy_nugget:9> * 3 : [1200, 900, 900, 600],
 	<enderio:item_alloy_nugget:3> * 3 : [900, 600],
 	<enderio:item_alloy_endergy_ingot> : [3600, 2700],
@@ -112,7 +112,7 @@ val Voltage = {
 	<enderio:item_alloy_nugget:4> * 2 : [12, 12],
 	<contenttweaker:rough_energetic_alloy_ingot> : [4, 4],
 	<enderio:item_alloy_nugget:1> * 2 : [12],
-	<enderio:item_alloy_nugget:7> * 3 : [8],
+	<enderio:item_alloy_nugget:7> * 4 : [8],
 	<enderio:item_alloy_nugget:9> * 3 : [4, 4, 4, 4],
 	<enderio:item_alloy_nugget:3> * 3 : [20, 20],
 	<enderio:item_alloy_endergy_ingot> : [12, 12],

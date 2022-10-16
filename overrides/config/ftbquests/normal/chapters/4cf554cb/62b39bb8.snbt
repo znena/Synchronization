@@ -8,9 +8,12 @@
 		"解锁电力合金、存储升级、初级物流等内容。",
 		"同时是解锁JourneyMap全屏地图的前置条件。"
 	],
+	min_required_dependencies: 3,
 	dependencies: [
 		"37fe0d26",
-		"5ededc2d"
+		"5ededc2d",
+		"1aa8c4a6",
+		"65160759"
 	],
 	hide: true,
 	size: 1.5d,

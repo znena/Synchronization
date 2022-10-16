@@ -8,6 +8,7 @@
 		"解锁JourneyMap全屏地图。"
 	],
 	dependencies: [
+		"93b80624",
 		"19ad0823",
 		"62b39bb8"
 	],

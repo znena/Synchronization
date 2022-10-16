@@ -1,4 +1,4 @@
-// TR: Sync Scripts #5 | 22/10/15
+// TR: Sync Scripts #5 | 22/10/16
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -123,6 +123,7 @@ for o, r in Recipes_shapeless {
 
 val Removes = [
 	"techreborn:machine_casing_3",
+	"techreborn:machine_casing_5",
 	"techreborn:assembling_machine",
 	"techreborn:upgrades_1",
 	"chickenchunks:spot_loader",

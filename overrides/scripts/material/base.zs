@@ -1,4 +1,4 @@
-// TR: Sync Scripts #9 | 22/9/30
+// TR: Sync Scripts #9 | 22/10/16
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -15,8 +15,8 @@ val Recipes = [
 	[<improvedextraction:ore_cluster:6>, <nuclearcraft:ingot:12>, null],
 	[<improvedextraction:ore_cluster:13>, <libvulpes:productingot:10>, null],
 	[<improvedextraction:ore_cluster:14>, <libvulpes:productingot:7>, null],
-	[<nuclearcraft:ore:3>, <techreborn:ingot:23>, <techreborn:smalldust:67>],
-	[<nuclearcraft:ore:4>, <techreborn:ingot:24>, <techreborn:smalldust:68>],
+	[<nuclearcraft:ore:3>, <techreborn:ingot:23>, null],
+	[<nuclearcraft:ore:4>, <techreborn:ingot:24>, null],
 	[<nuclearcraft:ore:5>, <nuclearcraft:ingot:5>, <contenttweaker:boron_nugget>],
 	[<nuclearcraft:ore:6>, <nuclearcraft:ingot:6>, <contenttweaker:lithium_nugget>],
 	[<nuclearcraft:ore:7>, <nuclearcraft:ingot:7>, <contenttweaker:magnesium_nugget>],
@@ -44,21 +44,6 @@ for n, i in Recipes {
 
 
 // Alloy Smelter
-
-val AS_Recipes = {
-	[<techreborn:dust:39>, <techreborn:dust:39>] : {
-		"easy" : <minecraft:iron_ingot> * 2,
-		"default" : <techreborn:nuggets:23> * 12,
-		"expert" : <techreborn:nuggets:19> * 2
-	},
-	[<techreborn:dust:50> * 2, <techreborn:dust:50> * 2] : {
-		"easy" : <techreborn:nuggets:18> * 2,
-		"default" : <techreborn:nuggets:18>
-	},
-	[<contenttweaker:iron_ore_dust> * 4, <techreborn:smalldust:13>] : {
-		"default" : <techreborn:ingot:19>
-	}
-} as IItemStack[string][IIngredient[]];
 
 val AS_Recipes_in = [
 	[<techreborn:dust:39>, <techreborn:dust:39>],

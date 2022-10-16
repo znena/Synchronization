@@ -1,4 +1,4 @@
-// TR: Sync Scripts #24 | 22/9/23
+// TR: Sync Scripts #24 | 22/10/16
 #priority 1
 
 import crafttweaker.item.IItemStack;
@@ -68,7 +68,9 @@ val A_Liquids = [
 	<liquid:vibrant_alloy>,
 	<liquid:conductive_iron>,
 	<liquid:pulsating_iron>,
-	<liquid:dark_steel>
+	<liquid:dark_steel>,
+	
+	<liquid:clay>
 ] as ILiquidStack[];
 
 for o in A_Liquids {

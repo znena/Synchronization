@@ -1,16 +1,32 @@
-// TR: Sync Scripts #19 | 22/1/15
+// TR: Sync Scripts #19 | 22/10/16
 
-recipes.remove(<improvedextraction:cutting_table>);
-recipes.addShaped("main/cutting_table", <improvedextraction:cutting_table>,
-		[[<techreborn:ingot:2>, <techreborn:ingot:2>, <techreborn:ingot:2>],
-		[<techreborn:ingot:2>, <nuclearcraft:part:6>, <techreborn:ingot:2>],
-		[<techreborn:ingot:2>, <techreborn:ingot:2>, <techreborn:ingot:2>]]);
-		
-recipes.addShapeless("main/netherrack", <minecraft:netherrack>,
-		[<improvedextraction:rock:4>, <improvedextraction:rock:4>, <improvedextraction:rock:4>,
-		<improvedextraction:rock:4>, <improvedextraction:rock:4>, <improvedextraction:rock:4>,
-		<improvedextraction:rock:4>, <improvedextraction:rock:4>, <improvedextraction:rock:4>]);
-recipes.addShapeless("main/end_stone", <minecraft:end_stone>,
-		[<improvedextraction:rock:5>, <improvedextraction:rock:5>, <improvedextraction:rock:5>,
-		<improvedextraction:rock:5>, <improvedextraction:rock:5>, <improvedextraction:rock:5>,
-		<improvedextraction:rock:5>, <improvedextraction:rock:5>, <improvedextraction:rock:5>]);
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+val ShapedRecipes = {
+	<minecraft:netherrack> : [
+		[[<improvedextraction:rock:4>, <improvedextraction:rock:4>],
+		 [<improvedextraction:rock:4>, <improvedextraction:rock:4>]]
+	],
+	<minecraft:end_stone> : [
+		[[<improvedextraction:rock:5>, <improvedextraction:rock:5>],
+		 [<improvedextraction:rock:5>, <improvedextraction:rock:5>]]
+	],
+	<improvedextraction:cutting_table> : [
+		[[<ore:plateRefinedIron>, <ore:fusedQuartz>, <ore:plateRefinedIron>],
+		 [<ore:ingotBronze>, <enderio:item_material:9>, <ore:ingotBronze>],
+		 [<ore:ingotBronze>, <ore:plateRefinedIron>, <ore:ingotBronze>]]
+	]
+} as IIngredient[][][][IItemStack];
+
+for o, rs in ShapedRecipes {
+	recipes.remove(o);
+	var t = 0 as int;
+	for r in rs {
+		t += 1;
+		if (!isNull(r)) {
+			recipes.addShaped("main/" ~ o.name ~ "." ~ (t as string), o, r);
+		}
+	}
+}
+
