@@ -4,6 +4,7 @@
 	y: -2.0d,
 	description: "永恒能量",
 	dependencies: [
+		"af95e34d",
 		"62b39bb8",
 		"a0e828fb",
 		"770d0316"

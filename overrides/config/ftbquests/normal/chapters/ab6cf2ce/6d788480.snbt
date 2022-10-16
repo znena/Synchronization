@@ -7,8 +7,10 @@
 		"挖掘下来的宝石原石纯度过低，无法用于合成，",
 		"使用这套切割工具以打磨至可使用的宝石。"
 	],
+	hide_dependency_lines: true,
 	dependencies: [
 		"ec536327",
+		"af95e34d",
 		"1aa8c4a6"
 	],
 	hide: true,

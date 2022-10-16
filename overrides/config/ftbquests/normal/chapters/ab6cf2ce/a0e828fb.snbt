@@ -1,5 +1,5 @@
 {
-	x: 12.5d,
+	x: 12.0d,
 	y: -4.0d,
 	description: "光伏材料",
 	text: [

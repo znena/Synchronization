@@ -8,6 +8,8 @@
 		"解锁JourneyMap死亡路径点功能。"
 	],
 	dependencies: [
+		"d3f55aed",
+		"76b11bd8",
 		"1170b0b3"
 	],
 	hide: true,
