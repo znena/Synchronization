@@ -1,4 +1,4 @@
-// TR: Sync Scripts #49 | 22/9/30
+// TR: Sync Scripts #49 | 22/10/17
 #priority 1
 
 import crafttweaker.item.IItemStack;
@@ -26,21 +26,21 @@ val Recipes = {
 	<ore:ingotSteel> : <techreborn:plates:29>,
 	<ore:ingotBrass> : <techreborn:plates:18>,
 	<ore:ingotInvar> : <techreborn:plates:23>,
-	<ore:plateGold> : <contenttweaker:gold_foil> * 2
+	<ore:plateGold> : <contenttweaker:gold_foil> * 2,
+	<ore:plateTin> : <techreborn:dynamiccell> * 2
 } as IItemStack[IIngredient];
 // To custom.crafting.manual_crafting
 
 val EU_Costs = {
-	<ore:ingotSilver> : [300, 12],
-	<ore:ingotElectrum> : [300, 16],
-	<ore:ingotLead> : [300, 12],
-	<ore:ingotAluminum> : [300, 16],
-	<ore:ingotChrome> : [600, 16],
-	<ore:ingotPlatinum> : [600, 32],
-	<ore:ingotBronze> : [300, 16],
-	<ore:ingotSteel> : [600, 16],
-	<ore:ingotBrass> : [300, 16],
-	<ore:ingotInvar> : [600, 16]
+	<ore:ingotElectrum> : [300, 4],
+	<ore:ingotAluminum> : [300, 4],
+	<ore:ingotChrome> : [600, 4],
+	<ore:ingotPlatinum> : [600, 8],
+	<ore:ingotBronze> : [300, 4],
+	<ore:ingotSteel> : [600, 4],
+	<ore:ingotBrass> : [300, 4],
+	<ore:ingotInvar> : [600, 4],
+	<ore:plateTin> : [200, 3]
 } as int[][IIngredient];
 
 for i, o in Recipes {

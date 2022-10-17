@@ -1,4 +1,4 @@
-// TR: Sync Scripts #25 | 22/10/1
+// TR: Sync Scripts #25 | 22/10/17
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -23,7 +23,8 @@ val PlateBendingRecipes = {
 	<ore:ingotSteel> : <techreborn:plates:29>,
 	<ore:ingotBrass> : <techreborn:plates:18>,
 	<ore:ingotInvar> : <techreborn:plates:23>,
-	<ore:plateGold> : <contenttweaker:gold_foil> * 2
+	<ore:plateGold> : <contenttweaker:gold_foil> * 2,
+	<ore:plateTin> : <techreborn:dynamiccell> * 2
 } as IItemStack[IIngredient];
 
 val mortar = <contenttweaker:boron_mortar>.anyDamage().transformDamage(2) as IIngredient;
