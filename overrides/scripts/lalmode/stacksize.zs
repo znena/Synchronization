@@ -1,4 +1,4 @@
-// TR: Sync Scripts #22 | 22/10/16
+// TR: Sync Scripts | 22/10/16
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -127,6 +127,8 @@ val Stacksizes = {
 		<techreborn:nuggets:*>,
 		<tconstruct:nuggets:*>,
 		<libvulpes:productnugget:*>,
+		<techreborn:smalldust:*>,
+		<contenttweaker:conductive_iron_smalldust>,
 		
 		<minecraft:torch>,
 		<minecraft:stick>,

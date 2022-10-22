@@ -1,4 +1,4 @@
-// TR: Sync Scripts #16 | 22/9/11
+// TR: Sync Scripts | 22/9/11
 
 furnace.remove(<techreborn:ingot:19>);
 furnace.addRecipe(<techreborn:nuggets:19> * 3, <minecraft:iron_ingot>, 5);

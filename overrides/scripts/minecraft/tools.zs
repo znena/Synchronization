@@ -1,7 +1,11 @@
-// TR: Sync Scripts #37 | 22/9/30
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+
+val hammer = <contenttweaker:refined_iron_hammer>.anyDamage().transformDamage(3) | 
+		<contenttweaker:bronze_hammer>.anyDamage().transformDamage(2) | 
+		<contenttweaker:lead_hammer>.anyDamage().transformDamage(2) as IIngredient;
 
 // Recipes
 
@@ -37,6 +41,30 @@ val Recipes = {
 		[[<ore:plankWood>, <techreborn:plates:35>, <ore:plankWood>],
 		 [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
 		 [null, <ore:plankWood>, null]]
+	],
+	<minecraft:iron_sword> : [
+		[[<ore:ingotIron>],
+		 [<ore:ingotIron>],
+		 [<ore:stickWood>]],
+		[[hammer],
+		 [<ore:plateIron>],
+		 [<ore:stickWood>]]
+	],
+	<minecraft:iron_pickaxe> : [
+		[[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+		 [null, <ore:stickWood>, null],
+		 [null, <ore:stickWood>, null]],
+		[[<ore:plateIron>, <ore:ingotIron>, hammer],
+		 [null, <ore:stickWood>, null],
+		 [null, <ore:stickWood>, null]]
+	],
+	<minecraft:iron_axe> : [
+		[[<ore:ingotIron>, <ore:ingotIron>],
+		 [<ore:ingotIron>, <ore:stickWood>],
+		 [null, <ore:stickWood>]],
+		[[<ore:plateIron>, <ore:ingotIron>],
+		 [hammer, <ore:stickWood>],
+		 [null, <ore:stickWood>]]
 	]
 } as IIngredient[][][][IItemStack];
 
@@ -45,7 +73,7 @@ for i, rs in Recipes {
 	var t as int = 0;
 	for r in rs {
 		t += 1;
-		recipes.addShaped("vanilla/" ~ i.name ~ "." ~ (t as string), i, r);
+		recipes.addShapedMirrored("vanilla/" ~ i.name ~ "." ~ (t as string), i, r);
 	}
 }
 
@@ -53,7 +81,7 @@ for i, rs in Recipes {
 // Max Damage
 
 val Damage = {
-	<minecraft:wooden_pickaxe> : 5,
+	<minecraft:wooden_pickaxe> : 10,
 	<minecraft:stone_pickaxe> : 48
 } as int[IItemStack];
 

@@ -1,24 +1,13 @@
-// TR: Sync Scripts #18 | 22/10/1
+// TR: Sync Scripts | 22/10/22
 #loader contenttweaker
-#priority 100
+#priority 101
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.ResourceLocation;
+import mods.contenttweaker.Color;
 
 val creative_tab = <creativetab:sync>;
-
-val Item_ids = [
-	"boron_nugget",
-	"lithium_nugget",
-	"magnesium_nugget",
-	"rough_plastic_plate",
-	"rough_energetic_alloy_ingot",
-	"plastic_rode",
-	"refined_iron_dust",
-	"conductive_iron_dust",
-	"conductive_iron_small_dust",
-	"gold_foil"
-] as string[];
 
 val Item_tools = {
 	"refined_iron_hammer" : 40,
@@ -27,12 +16,6 @@ val Item_tools = {
 	"boron_mortar" : 100
 } as int[string];
 
-for i in Item_ids {
-	var item = VanillaFactory.createItem(i);
-	item.creativeTab = creative_tab;
-	item.register();
-}
-
 for i, s in Item_tools {
 	var item = VanillaFactory.createItem(i);
 	item.creativeTab = creative_tab;
@@ -40,3 +23,94 @@ for i, s in Item_tools {
 	item.setMaxStackSize(1);
 	item.register();
 }
+
+
+function createColoredItem (id as string, texture as string, color as int) {
+	var itemm = VanillaFactory.createItem(id);
+	itemm.creativeTab = <creativetab:sync>;
+	itemm.textureLocation = ResourceLocation.create(texture);
+	if (color>=0) {
+		itemm.itemColorSupplier = function(item, tintIndex) {
+			return Color.fromInt(color);
+		};
+	}
+	itemm.register();
+}
+
+val Mat_colors = {
+	"gold" : 0xfff000,
+	"redstone" : 0xdf3000,
+	"boron" : 0x808080,
+	"lithium" : 0xf0f0f0,
+	"magnesium" : 0xffc8dd,
+	"refined_iron" : 0xe8f0f0,
+	"conductive_iron" : 0xffc0c0,
+	"rough_energetic_alloy" : 0xffc000,
+	"rough_plastic" : 0x40384a,
+	"amethyst" : 0x8000f0,
+} as int[string];
+
+val Item_mats = {
+	"ingot" : [
+		"rough_energetic_alloy"
+	],
+	"gem" : [
+		"amethyst"
+	],
+	"plate" : [
+		"rough_plastic"
+	],
+	"dust" : [
+		"conductive_iron",
+		"refined_iron"
+	],
+	"nugget" : [
+		"boron",
+		"lithium",
+		"magnesium"
+	],
+	"rod" : [
+		"rough_plastic"
+	],
+	"smalldust" : [
+		"conductive_iron"
+	],
+	"foil" : [
+		"gold"
+	],
+	"coal" : [
+		"redstone"
+	]
+} as string[][string];
+
+val Item_textures_fix = {
+} as string[string];
+
+val Item_id_fix = {
+	"ingot" : {},
+	"gem" : {},
+	"plate" : {},
+	"dust" : {},
+	"nugget" : {},
+	"rod" : {},
+	"smalldust" : {},
+	"foil" : {},
+	"coal" : {
+		"redstone" : "flux_fuel"
+	}
+} as string[string][string];
+
+for t, ms in Item_mats {
+	var texture as string = "sync:items/" ~ t;
+	if (Item_textures_fix has t) {
+		texture = Item_textures_fix[t];
+	}
+	for m in ms {
+		var id as string = m ~ "_" ~ t;
+		if (Item_id_fix[t] has m) {
+			id = Item_id_fix[t][m];
+		}
+		createColoredItem(id, texture, Mat_colors[m]);
+	}
+}
+

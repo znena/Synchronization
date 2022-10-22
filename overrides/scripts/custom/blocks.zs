@@ -1,4 +1,4 @@
-// TR: Sync Scripts #32 | 22/9/30
+// TR: Sync Scripts | 22/10/22
 #loader contenttweaker
 #priority 100
 
@@ -13,10 +13,12 @@ val Ore_block_property as float[][string] = {
 	"basalt" : [6.0, 15.0, 2],
 	"weathered_stone" : [1.5, 5.0, 0],
 	"tetrahedrite_ore" : [4.0, 15.0, 2],
+	"cassiterite_ore" : [4.0, 15.0, 2],
 	"gold_ore" : [3.0, 15.0, 2],
 	"diamond_ore" : [4.5, 15.0, 2],
 	"redstone_ore" : [3.0, 15.0, 2],
-	"lapis_ore" : [4.0, 15.0, 2]
+	"lapis_ore" : [4.0, 15.0, 2],
+	"quartz_ore" : [3.5, 15.0, 2]
 };
 
 val Ore_block_drops as DropHandler[string] = {
@@ -34,6 +36,7 @@ val Ore_block_drops as DropHandler[string] = {
 		drops.add(<item:enderio:item_material:5> % 10);
 		for i in 1 to (fortune + 2) {
 			drops.add(<item:minecraft:redstone> % 50);
+			drops.add(<item:enderio:item_material:5> % 10);
 		}
 		return;
 	},
@@ -43,6 +46,19 @@ val Ore_block_drops as DropHandler[string] = {
 		drops.add(<item:minecraft:dye:4> % 50);
 		for i in 1 to (fortune * 3) {
 			drops.add((<item:minecraft:dye:4> * 2) % 25);
+		}
+		return;
+	},
+	"quartz_ore" : function(drops, world, position, state, fortune) {
+		drops.clear();
+		drops.add(<item:minecraft:quartz>);
+		drops.add(<item:contenttweaker:amethyst_gem> % 10);
+		for i in 1 to (fortune) {
+			drops.add((<item:minecraft:quartz> * 2) % 25);
+			drops.add(<item:contenttweaker:amethyst_gem> % 5);
+		}
+		if (fortune>=3) {
+			drops.add((<item:contenttweaker:amethyst_gem> * 2) % 3);
 		}
 		return;
 	}

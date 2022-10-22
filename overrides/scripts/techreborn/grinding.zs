@@ -1,4 +1,4 @@
-// TR: Sync Scripts #35 | 22/10/16
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -25,7 +25,8 @@ var Recipes = {
 	<improvedextraction:ore_cluster:4> : <techreborn:smalldust:47> * 2,
 	<improvedextraction:ore_cluster:5> : <techreborn:smalldust:29> * 2,
 	<nuclearcraft:ore:3> : <techreborn:smalldust:67>,
-	<nuclearcraft:ore:4> : <techreborn:smalldust:68>
+	<nuclearcraft:ore:4> : <techreborn:smalldust:68>,
+	<contenttweaker:cassiterite_ore> : <techreborn:smalldust:53>
 } as IItemStack[IIngredient];
 
 val EU_Costs = {
@@ -41,7 +42,8 @@ val EU_Costs = {
 	<improvedextraction:ore_cluster:4> : [300, 8],
 	<improvedextraction:ore_cluster:5> : [300, 8],
 	<nuclearcraft:ore:3> : [600, 8],
-	<nuclearcraft:ore:4> : [600, 8]
+	<nuclearcraft:ore:4> : [600, 8],
+	<contenttweaker:cassiterite_ore> : [300, 8]
 } as int[][IIngredient];
 
 val Moded_Items = {

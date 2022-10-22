@@ -1,5 +1,6 @@
-// TR: Sync Scripts #45 | 22/10/1
+// TR: Sync Scripts | 22/10/22
 #loader crafttweaker reloadableevents
+#priority 99
 
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingHurtEvent;
@@ -16,6 +17,14 @@ val Dimension_Damage_Debuff = {
 	1 : [4.0, 2.5, 5.0]
 } as float[][int];
 val AdvR_Dimension_Debuff = [10.0, 5.0] as float[];
+
+function getDamageBuff (player as IPlayer) as double {
+	var damage_buff as double = (player.xp as double) * 0.04 + 0.4;
+	if (damage_buff > 16 as double) {
+		damage_buff = 16 as double;
+	}
+	return damage_buff;
+}
 
 events.onEntityLivingHurt(function(event as EntityLivingHurtEvent) {
 	val entity as IEntity = event.entity;
@@ -34,10 +43,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent) {
 		}
 		if (event.damageSource.getTrueSource() instanceof IPlayer) {
 			val player as IPlayer = event.damageSource.getTrueSource();
-			var damage_buff as double = (player.xp as double) * 0.04 + 0.4;
-			if (damage_buff > 16 as double) {
-				damage_buff = 16 as double;
-			}
+			var damage_buff as double = getDamageBuff(player);
 			event.amount *= damage_buff;
 		}
 	} else {

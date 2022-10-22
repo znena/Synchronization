@@ -1,4 +1,4 @@
-// TR: Sync Scripts #24 | 22/10/16
+// TR: Sync Scripts | 22/10/16
 #priority 1
 
 import crafttweaker.item.IItemStack;

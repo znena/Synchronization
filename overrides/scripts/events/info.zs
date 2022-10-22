@@ -1,4 +1,4 @@
-// TR: Sync Scripts #4 | 22/9/12
+// TR: Sync Scripts | 22/9/12
 #loader crafttweaker reloadableevents
 #priority 998
 

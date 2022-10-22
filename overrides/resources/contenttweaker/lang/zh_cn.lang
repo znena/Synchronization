@@ -1,22 +1,20 @@
-# TR: Sync Lang zh_cn | 22/9/30
+# TR: Sync Lang zh_cn | 22/10/22
 item.contenttweaker.boron_nugget.name=硼粒
 item.contenttweaker.lithium_nugget.name=锂粒
 item.contenttweaker.magnesium_nugget.name=镁粒
 item.contenttweaker.rough_plastic_plate.name=粗塑料片
 item.contenttweaker.rough_energetic_alloy_ingot.name=粗充能合金锭
-item.contenttweaker.plastic_rode.name=塑料杆
+item.contenttweaker.rough_plastic_rod.name=塑料杆
 item.contenttweaker.calcite_dust.name=方解石粉
 item.contenttweaker.refined_iron_dust.name=精炼铁粉
 item.contenttweaker.conductive_iron_dust.name=导电铁粉
-item.contenttweaker.conductive_iron_small_dust.name=小撮导电铁粉
+item.contenttweaker.conductive_iron_smalldust.name=小撮导电铁粉
 item.contenttweaker.gold_foil.name=金箔
+item.contenttweaker.flux_fuel.name=通量燃料
+item.contenttweaker.amethyst_gem.name=紫水晶
 
 item.contenttweaker.boron_mortar.name=硼研钵
 item.contenttweaker.bronze_hammer.name=青铜锤
-item.contenttweaker.copper_axe.name=铜斧
-item.contenttweaker.copper_pickaxe.name=铜镐
-item.contenttweaker.copper_shovel.name=铜锹
-item.contenttweaker.copper_sword.name=铜剑
 item.contenttweaker.lead_hammer.name=铅锤
 item.contenttweaker.refined_iron_hammer.name=精炼铁锤
 
@@ -24,8 +22,10 @@ tile.contenttweaker.calcite.name=方解石
 tile.contenttweaker.basalt.name=玄武岩
 tile.contenttweaker.weathered_stone.name=风化的岩石
 tile.contenttweaker.iron_ore_dust.name=铁矿砂
-tile.contenttweaker.tetrahedrite_ore.name=黝铜矿矿石
+tile.contenttweaker.tetrahedrite_ore.name=黝铜矿石
+tile.contenttweaker.cassiterite_ore.name=锡石矿石
 tile.contenttweaker.gold_ore.name=金矿石
 tile.contenttweaker.diamond_ore.name=钻石矿石
 tile.contenttweaker.redstone_ore.name=红石矿石
 tile.contenttweaker.lapis_ore.name=青金石矿石
+tile.contenttweaker.quartz_ore.name=石英矿石

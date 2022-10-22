@@ -1,6 +1,6 @@
-// TR: Sync Scripts #48 | 22/9/25
+// TR: Sync Scripts | 22/10/22
 #loader contenttweaker
-#priority 101
+#priority 110
 
 import crafttweaker.creativetabs.ICreativeTab;
 import mods.contenttweaker.VanillaFactory;

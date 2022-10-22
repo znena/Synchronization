@@ -1,4 +1,4 @@
-// TR: Sync Scripts #25 | 22/10/17
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -40,7 +40,8 @@ val DustRecipes = {
 	<ore:ingotRefinedIron> : <contenttweaker:refined_iron_dust>,
 	<ore:ingotBronze> : <techreborn:dust:7>,
 	<ore:ingotElectrum> : <techreborn:dust:17>,
-	<ore:ingotConductiveIron> : <contenttweaker:conductive_iron_dust>
+	<ore:ingotConductiveIron> : <contenttweaker:conductive_iron_dust>,
+	<minecraft:coal> : <techreborn:dust:13>
 } as IItemStack[IIngredient];
 
 for i, o in PlateBendingRecipes {

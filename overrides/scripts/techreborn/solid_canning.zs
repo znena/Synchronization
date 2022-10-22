@@ -1,4 +1,4 @@
-// TR: Sync Scripts #34 | 22/10/1
+// TR: Sync Scripts | 22/10/1
 
 import crafttweaker.item.IItemStack;
 import mods.techreborn.solidCanningMachine;

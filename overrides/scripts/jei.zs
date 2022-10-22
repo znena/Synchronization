@@ -1,4 +1,4 @@
-// TR: Sync Scripts #51 | 22/9/20
+// TR: Sync Scripts | 22/9/20
 
 import mods.jei.JEI;
 
