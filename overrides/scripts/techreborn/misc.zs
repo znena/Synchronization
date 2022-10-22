@@ -1,4 +1,4 @@
-// TR: Sync Scripts #5 | 22/10/16
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -108,8 +108,13 @@ for o, r in Recipes_shaped {
 // Shapeless
 
 val Recipes_shapeless = {
-	<techreborn:part:42> : [<ore:circuitBasic>, <techreborn:cable:6>, <ore:dustLapis>,
-			<ore:plateInvar>]
+	<techreborn:part:42> : [
+		<ore:circuitBasic>, <techreborn:cable:6>, <ore:dustLapis>, <ore:plateInvar>
+	],
+	<techreborn:part:34> : [
+		<techreborn:part:35>, <techreborn:part:35>, <techreborn:part:35>, <techreborn:part:35>, <techreborn:part:35>,
+		<techreborn:part:35>, <techreborn:part:35>, <techreborn:part:35>, <techreborn:part:35>
+	]
 } as IIngredient[][IItemStack];
 
 for o, r in Recipes_shapeless {

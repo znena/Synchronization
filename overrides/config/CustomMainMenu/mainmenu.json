@@ -3,7 +3,7 @@
     {
         "title":
         {
-            "image" : "mainmenu:title/title.png",
+            "image" : "sync:textures/mainmenu/title.png",
             "posX" : -165,
             "posY" : 40,
             "width" : 440,
@@ -142,25 +142,25 @@
             "displayDuration": 100,
 			"fadeDuration": 30,
 		  "images": [
-			"mainmenu:background/#01.JPG",
-			"mainmenu:background/#05.jpg",
-			"mainmenu:background/#13.jpg",
-			"mainmenu:background/#06.JPG",
-			"mainmenu:background/#08.jpg",
-			"mainmenu:background/#19.jpg",
-			"mainmenu:background/#14.jpg",
-			"mainmenu:background/#08.jpg",
-			"mainmenu:background/#15.jpg",
-			"mainmenu:background/#10.jpg",
-			"mainmenu:background/#17.jpg",
-			"mainmenu:background/#02.jpg",
-			"mainmenu:background/#12.jpg",
-			"mainmenu:background/#07.jpg",
-			"mainmenu:background/#04.jpg",
-			"mainmenu:background/#11.JPG",
-			"mainmenu:background/#16.jpg",
-			"mainmenu:background/#03.jpg",
-			"mainmenu:background/#18.jpg"
+			"sync:textures/mainmenu/background/#01.JPG",
+			"sync:textures/mainmenu/background/#05.jpg",
+			"sync:textures/mainmenu/background/#13.jpg",
+			"sync:textures/mainmenu/background/#06.JPG",
+			"sync:textures/mainmenu/background/#08.jpg",
+			"sync:textures/mainmenu/background/#19.jpg",
+			"sync:textures/mainmenu/background/#14.jpg",
+			"sync:textures/mainmenu/background/#08.jpg",
+			"sync:textures/mainmenu/background/#15.jpg",
+			"sync:textures/mainmenu/background/#10.jpg",
+			"sync:textures/mainmenu/background/#17.jpg",
+			"sync:textures/mainmenu/background/#02.jpg",
+			"sync:textures/mainmenu/background/#12.jpg",
+			"sync:textures/mainmenu/background/#07.jpg",
+			"sync:textures/mainmenu/background/#04.jpg",
+			"sync:textures/mainmenu/background/#11.JPG",
+			"sync:textures/mainmenu/background/#16.jpg",
+			"sync:textures/mainmenu/background/#03.jpg",
+			"sync:textures/mainmenu/background/#18.jpg"
 		  ]
 		}
       }

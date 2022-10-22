@@ -1,4 +1,4 @@
-// TR: Sync Scripts #6 | 22/9/25
+// TR: Sync Scripts | 22/9/25
 
 import crafttweaker.item.IItemStack;
 import loottweaker.LootTweaker;

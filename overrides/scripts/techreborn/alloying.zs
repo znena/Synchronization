@@ -1,4 +1,4 @@
-// TR: Sync Scripts #23 | 22/10/16
+// TR: Sync Scripts | 22/10/21
 #priority 1
 
 import crafttweaker.item.IItemStack;
@@ -109,13 +109,13 @@ val Voltage = {
 	<techreborn:ingot:1> : [8, 8, 8, 8],
 	<techreborn:ingot:6> : [16, 16, 16, 16],
 	<techreborn:ingot:20> : [12],
-	<enderio:item_alloy_nugget:4> * 2 : [12, 12],
+	<enderio:item_alloy_nugget:4> * 2 : [8, 8],
 	<contenttweaker:rough_energetic_alloy_ingot> : [4, 4],
 	<enderio:item_alloy_nugget:1> * 2 : [12],
 	<enderio:item_alloy_nugget:7> * 4 : [8],
 	<enderio:item_alloy_nugget:9> * 3 : [4, 4, 4, 4],
 	<enderio:item_alloy_nugget:3> * 3 : [20, 20],
-	<enderio:item_alloy_endergy_ingot> : [12, 12],
+	<enderio:item_alloy_endergy_ingot> : [8, 8],
 	<enderio:item_alloy_nugget> * 3 : [12, 12],
 	<enderio:block_fused_quartz> : [1],
 	<enderio:item_alloy_nugget:2> * 3 : [16, 16],

@@ -1,4 +1,4 @@
-// TR: Sync Scripts #10 | 22/10/1
+// TR: Sync Scripts | 22/10/1
 
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.item.IIngredient;

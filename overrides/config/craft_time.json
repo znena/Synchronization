@@ -1549,7 +1549,7 @@
 			}
 		},
 		"improvedextraction": {
-			"mod_multiplier": 2.0,
+			"mod_multiplier": 1.0,
 			"items": {
 				"rock": 20.0,
 				"ore_cluster": 20.0,

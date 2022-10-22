@@ -1,4 +1,4 @@
-// TR: Sync Scripts #36 | 22/10/2
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -39,19 +39,18 @@ for o, i in Recipes {
 
 // Conductive Alloy
 
-recipes.addShapeless("main/conductive_iron_dust", <contenttweaker:conductive_iron_dust>,
-		[<contenttweaker:conductive_iron_small_dust>, <contenttweaker:conductive_iron_small_dust>,
-		<contenttweaker:conductive_iron_small_dust>, <contenttweaker:conductive_iron_small_dust>,
-		<contenttweaker:conductive_iron_small_dust>, <contenttweaker:conductive_iron_small_dust>,
-		<contenttweaker:conductive_iron_small_dust>, <contenttweaker:conductive_iron_small_dust>,
-		<contenttweaker:conductive_iron_small_dust>]);
-recipes.addShapeless("main/conductive_iron_small_dust",
-		<contenttweaker:conductive_iron_small_dust> * 9, [<contenttweaker:conductive_iron_dust>]);
+recipes.addShapeless("main/conductive_iron_dust", <contenttweaker:conductive_iron_dust>, [
+		<contenttweaker:conductive_iron_smalldust>, <contenttweaker:conductive_iron_smalldust>, <contenttweaker:conductive_iron_smalldust>,
+		<contenttweaker:conductive_iron_smalldust>, <contenttweaker:conductive_iron_smalldust>, <contenttweaker:conductive_iron_smalldust>,
+		<contenttweaker:conductive_iron_smalldust>, <contenttweaker:conductive_iron_smalldust>, <contenttweaker:conductive_iron_smalldust>
+]);
+recipes.addShapeless("main/conductive_iron_smalldust",
+		<contenttweaker:conductive_iron_smalldust> * 9, [<contenttweaker:conductive_iron_dust>]);
 		
-furnace.addRecipe(<enderio:item_alloy_nugget:4>, <contenttweaker:conductive_iron_small_dust>);
+furnace.addRecipe(<enderio:item_alloy_nugget:4>, <contenttweaker:conductive_iron_smalldust>);
 furnace.addRecipe(<enderio:item_alloy_ingot:4>, <contenttweaker:conductive_iron_dust>);
 
-recipes.addShapeless("main/conductive_iron_dust_alloy", <contenttweaker:conductive_iron_small_dust>,
+recipes.addShapeless("main/conductive_iron_dust_alloy", <contenttweaker:conductive_iron_smalldust>,
 		[<ore:dustRefinedIron>, <ore:dustRefinedIron>, <fluxnetworks:flux>, <fluxnetworks:flux>]);
 
 

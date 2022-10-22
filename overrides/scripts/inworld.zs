@@ -1,4 +1,4 @@
-// TR: Sync Scripts #52 | 22/10/16
+// TR: Sync Scripts | 22/10/16
 
 import mods.inworldcrafting.ExplosionCrafting;
 import mods.inworldcrafting.FluidToItem;

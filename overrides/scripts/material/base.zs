@@ -1,4 +1,4 @@
-// TR: Sync Scripts #9 | 22/10/16
+// TR: Sync Scripts | 22/10/21
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -24,9 +24,9 @@ val Recipes = [
 ] as IItemStack[][];
 
 val Output_Num = {
-	"easy" : [6, 6, 6, 6, 0, 0, 0, 2, 2, 2, 2, 2, 4],
-	"normal" : [3, 3, 3, 3, 0, 0, 0, 1, 1, 1, 1, 1, 3],
-	"expert" : [2, 2, 2, 2, 0, 0, 0, 1, 1, 1, 1, 1, 2]
+	"easy" : [6, 6, 6, 6, 0, 0, 0, 2, 2, 3, 2, 2, 4],
+	"normal" : [3, 3, 3, 3, 0, 0, 0, 1, 1, 2, 1, 1, 3],
+	"expert" : [2, 2, 2, 2, 0, 0, 0, 1, 1, 2, 1, 1, 2]
 } as int[][string];
 
 for n, i in Recipes {

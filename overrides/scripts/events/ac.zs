@@ -1,4 +1,4 @@
-// TR: Sync Scripts #38 | 22/9/12
+// TR: Sync Scripts | 22/9/12
 #loader crafttweaker reloadableevents
 
 import crafttweaker.events.IEventManager;

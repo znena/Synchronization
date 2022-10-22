@@ -1,7 +1,11 @@
-// TR: Sync Scripts #41 | 22/10/2
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+
+val hammer = <contenttweaker:refined_iron_hammer>.anyDamage().transformDamage(3) | 
+		<contenttweaker:bronze_hammer>.anyDamage().transformDamage(2) | 
+		<contenttweaker:lead_hammer>.anyDamage().transformDamage(2) as IIngredient;
 
 val ShapedRecipes = {
 	<advancedrocketry:platepress> : [
@@ -11,7 +15,7 @@ val ShapedRecipes = {
 	<libvulpes:productrod:1> * 2 : [
 		[[null, null, <ore:plateIron>],
 		 [null, <ore:plateIron>, null],
-		 [<ore:plateIron>, null, null]]
+		 [<ore:plateIron>, null, hammer]]
 	]
 } as IIngredient[][][][IItemStack];
 
@@ -34,3 +38,5 @@ for o, r in ShapelessRecipes {
 	recipes.addShapeless("main/advancedrocketry." ~ o.name, o, r);
 }
 
+
+recipes.removeByRecipeName("libvulpes:coalgenerator");

@@ -1,4 +1,4 @@
-// TR: Sync Scripts #42 | 22/10/16
+// TR: Sync Scripts | 22/10/16
 
 import crafttweaker.liquid.ILiquidStack;
 import mods.tconstruct.Alloy;
