@@ -7,6 +7,7 @@
 		"它可以帮助你在游戏前期向用电物品充电。"
 	],
 	dependencies: [
+		"8686db4a",
 		"6d3ffb05"
 	],
 	hide: true,

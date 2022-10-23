@@ -1,21 +1,17 @@
 {
-	x: 6.5d,
+	x: 2.0d,
 	y: 4.0d,
-	description: "钻石！",
-	text: [
-		""
-	],
+	description: "闪闪发光",
 	hide_dependency_lines: true,
 	dependencies: [
 		"50b45132",
 		"73a349e8"
 	],
-	hide: true,
 	tasks: [{
-		uid: "11d02053",
+		uid: "0c5dec06",
 		type: "item",
 		items: [{
-			item: "improvedextraction:raw_crystal"
+			item: "minecraft:gold_ingot"
 		}]
 	}]
 }

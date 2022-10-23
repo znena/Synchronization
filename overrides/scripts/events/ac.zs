@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/9/12
+// TR: Sync Scripts | 22/10/22
 #loader crafttweaker reloadableevents
 
 import crafttweaker.events.IEventManager;
@@ -10,7 +10,7 @@ import scripts.utils.mode as pack_mode;
 
 val allow_commands = ["?", "backup", "ct", "ctgui", "cheatingmode", "forge", "gamestage", "help",
 		"me", "msg", "my_settings", "reload", "team", "tell", "tofe", "together", "togetherforever",
-		"ts", "w", "reloadShaders", "reloadChunks"] as string[];
+		"sync", "w", "reloadShaders", "reloadChunks"] as string[];
 
 events.onCommand(function(event as CommandEvent) {
 	if (event.commandSender instanceof IPlayer) {

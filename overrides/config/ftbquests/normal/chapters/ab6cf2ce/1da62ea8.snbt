@@ -1,7 +1,11 @@
 {
 	x: 23.0d,
 	y: -5.5d,
-	description: "挖矿工具（",
+	description: "挖掘升级",
+	text: [
+		"每次挖掘消耗12.5EU电力。",
+		"它能够帮助你在前期的挖矿效率提升许多倍。"
+	],
 	dependencies: [
 		"1ae2a48e"
 	],

@@ -1,7 +1,10 @@
 {
 	x: 10.0d,
 	y: 0.0d,
-	description: "要塞之战",
+	description: "最后一关",
+	text: [
+		""
+	],
 	dependencies: [
 		"bbc7f99a"
 	],

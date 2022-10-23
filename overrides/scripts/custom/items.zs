@@ -80,6 +80,9 @@ val Item_mats = {
 	],
 	"coal" : [
 		"redstone"
+	],
+	"flawed" : [
+		"amethyst"
 	]
 } as string[][string];
 
@@ -97,7 +100,8 @@ val Item_id_fix = {
 	"foil" : {},
 	"coal" : {
 		"redstone" : "flux_fuel"
-	}
+	},
+	"flawed" : {}
 } as string[string][string];
 
 for t, ms in Item_mats {

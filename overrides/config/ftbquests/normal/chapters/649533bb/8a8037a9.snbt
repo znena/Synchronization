@@ -6,6 +6,7 @@
 		""
 	],
 	dependencies: [
+		"1ae2a48e",
 		"8e6262ef",
 		"675615ad"
 	],

@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/9/25
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import loottweaker.LootTweaker;
@@ -71,8 +71,8 @@ val LootTweaks = {
 	"minecraft:chests/abandoned_mineshaft" : {
 		"main" : [
 			LootTweakObject().init_remove("astralsorcery:constellation_paper"),
-			LootTweakObject().init_add(<techreborn:ingot:5>, 4, 1).setAmount(1, 2),
-			LootTweakObject().init_add(<tconstruct:materials>, 3).setAmount(1, 2)
+			LootTweakObject().init_add(<techreborn:ingot:5>, 4, 1).setAmount(1, 4),
+			LootTweakObject().init_add(<tconstruct:materials>, 3).setAmount(1, 4)
 		],
 		"pool1" : [
 			LootTweakObject().init_remove("minecraft:diamond")
@@ -82,51 +82,51 @@ val LootTweaks = {
 		"main" : [
 			LootTweakObject().init_remove("minecraft:diamond"),
 			LootTweakObject().init_remove("astralsorcery:constellation_paper"),
-			LootTweakObject().init_add(<techreborn:ingot:5>, 8).setAmount(1, 2),
-			LootTweakObject().init_add(<enderio:item_material:5>, 8).setAmount(1, 5)
+			LootTweakObject().init_add(<techreborn:ingot:5>, 8).setAmount(1, 4),
+			LootTweakObject().init_add(<enderio:item_material:5>, 8).setAmount(1, 8)
 		]
 	},
     "minecraft:chests/end_city_treasure" : {
 		"main" : [
-			LootTweakObject().init_add(<techreborn:ingot:5>, 4).setAmount(2, 5),
-			LootTweakObject().init_add(<enderio:item_alloy_ingot:1>, 3).setAmount(1, 3)
+			LootTweakObject().init_add(<techreborn:ingot:5>, 4).setAmount(2, 12),
+			LootTweakObject().init_add(<enderio:item_alloy_ingot:1>, 3).setAmount(1, 7)
 		]
 	},
     "minecraft:chests/igloo_chest" : {
 		"main" : [
 			LootTweakObject().init_remove("astralsorcery:constellation_paper"),
-			LootTweakObject().init_add(<techreborn:ingot:5>, 4).setAmount(1, 2),
-			LootTweakObject().init_add(<fluxnetworks:flux>, 7).setAmount(1, 10)
+			LootTweakObject().init_add(<techreborn:ingot:5>, 4).setAmount(1, 4),
+			LootTweakObject().init_add(<fluxnetworks:flux>, 7).setAmount(5, 16)
 		]
 	},
     "minecraft:chests/jungle_temple" : {
 		"main" : [
 			LootTweakObject().init_remove("astralsorcery:constellation_paper"),
-			LootTweakObject().init_add(<techreborn:ingot:5>, 4).setAmount(1, 2),
+			LootTweakObject().init_add(<techreborn:ingot:5>, 4).setAmount(1, 4),
 			LootTweakObject().init_add(<nuclearcraft:cobblestone_generator>, 1, 2)
 		]
 	},
     "minecraft:chests/jungle_temple_dispenser" : {
 		"main" : [
-			LootTweakObject().init_add(<techreborn:ingot:8>, 4).setAmount(1, 4)
+			LootTweakObject().init_add(<techreborn:ingot:8>, 4).setAmount(1, 8)
 		]
 	},
     "minecraft:chests/nether_bridge" : {
 		"main" : [
-			LootTweakObject().init_add(<techreborn:ingot:8>, 5).setAmount(2, 6)
+			LootTweakObject().init_add(<techreborn:ingot:8>, 5).setAmount(2, 10)
 		]
 	},
     "minecraft:chests/simple_dungeon" : {
 		"main" : [
-			LootTweakObject().init_add(<enderio:item_alloy_endergy_ingot>, 5).setAmount(1, 3),
-			LootTweakObject().init_add(<tconstruct:materials>, 4, 1).setAmount(1, 3),
-			LootTweakObject().init_add(<enderio:item_material:5>, 6).setAmount(1, 3)
+			LootTweakObject().init_add(<enderio:item_alloy_endergy_ingot>, 5).setAmount(1, 5),
+			LootTweakObject().init_add(<tconstruct:materials>, 4, 1).setAmount(1, 5),
+			LootTweakObject().init_add(<enderio:item_material:5>, 6).setAmount(1, 5)
 		]
 	},
     "minecraft:chests/spawn_bonus_chest" : {
 		"main" : [
 			LootTweakObject().removeAll(),
-			LootTweakObject().init_add(<minecraft:dirt>, 1).setAmount(1, 4)
+			LootTweakObject().init_add(<minecraft:dirt>, 3).setAmount(1, 4)
 		],
 		"pool1" : [
 			LootTweakObject().removeAll()
@@ -140,22 +140,22 @@ val LootTweaks = {
 	},
     "minecraft:chests/stronghold_corridor" : {
 		"main" : [
-			LootTweakObject().init_add(<improvedextraction:raw_crystal>, 1, 2).setAmount(1, 3),
+			LootTweakObject().init_add(<improvedextraction:raw_crystal>, 2, 2).setAmount(1, 6),
 			LootTweakObject().init_add(<enderio:item_alloy_ingot:7>, 1, 1),
-			LootTweakObject().init_add(<chickenchunks:chunk_loader:1>, 1, 1)
+			LootTweakObject().init_add(<chickenchunks:chunk_loader:1>, 2, 1)
 		]
 	},
     "minecraft:chests/stronghold_crossing" : {
 		"main" : [
-			LootTweakObject().init_add(<enderio:item_alloy_ingot:7>, 1, 1).setAmount(1, 3),
-			LootTweakObject().init_add(<chickenchunks:chunk_loader:1>, 2, 1)
+			LootTweakObject().init_add(<enderio:item_alloy_ingot:7>, 3, 1).setAmount(1, 6),
+			LootTweakObject().init_add(<chickenchunks:chunk_loader:1>, 3, 1)
 		]
 	},
     "minecraft:chests/stronghold_library" : {
 		"main" : [
-			LootTweakObject().init_add(<improvedextraction:raw_crystal>, 2, 2).setAmount(1, 2),
-			LootTweakObject().init_add(<enderio:item_alloy_ingot>, 2, 2).setAmount(1, 2),
-			LootTweakObject().init_add(<enderio:item_alloy_ingot:7>, 2, 1).setAmount(1, 3),
+			LootTweakObject().init_add(<improvedextraction:raw_crystal>, 2, 2).setAmount(1, 3),
+			LootTweakObject().init_add(<enderio:item_alloy_ingot>, 2, 2).setAmount(1, 4),
+			LootTweakObject().init_add(<enderio:item_alloy_ingot:7>, 2, 1).setAmount(1, 5),
 			LootTweakObject().init_add(<chickenchunks:chunk_loader:1>, 2, 2),
 			LootTweakObject().init_add(<waystones:waystone>, 1, 1)
 		]
@@ -170,10 +170,10 @@ val LootTweaks = {
     "minecraft:chests/woodland_mansion" : {
 		"main" : [
 			LootTweakObject().init_add(<chickenchunks:chunk_loader:1>, 3, 1),
-			LootTweakObject().init_add(<enderio:item_alloy_ingot:1>, 5, 1).setAmount(1, 3),
-			LootTweakObject().init_add(<techreborn:ingot>, 3, 1).setAmount(1, 2),
-			LootTweakObject().init_add(<tconstruct:materials>, 3).setAmount(1, 3),
-			LootTweakObject().init_add(<enderio:item_material:20>, 1, 3).setAmount(1, 2)
+			LootTweakObject().init_add(<enderio:item_alloy_ingot:1>, 5, 1).setAmount(1, 5),
+			LootTweakObject().init_add(<techreborn:ingot>, 3, 1).setAmount(1, 3),
+			LootTweakObject().init_add(<tconstruct:materials>, 3).setAmount(1, 5),
+			LootTweakObject().init_add(<enderio:item_material:20>, 1, 3).setAmount(1, 5)
 		]
 	}
 } as LootTweakObject[][string][string];

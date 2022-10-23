@@ -1,7 +1,10 @@
 {
 	x: 8.0d,
 	y: 0.75d,
-	description: "火神之血",
+	description: "生命的战利品",
+	text: [
+		""
+	],
 	dependencies: [
 		"47b575c8"
 	],

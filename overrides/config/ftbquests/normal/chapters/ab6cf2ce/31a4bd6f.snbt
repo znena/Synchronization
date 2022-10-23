@@ -1,0 +1,26 @@
+{
+	x: 25.5d,
+	y: 2.0d,
+	description: "电工",
+	text: [
+		"用以拆装防止错误的机械。",
+		"在做出他之前不小心把机器位置放错的话......可以考虑再做一个了。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"ec536327"
+	],
+	hide: true,
+	tasks: [{
+		uid: "76d2ef67",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "techreborn:wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}
