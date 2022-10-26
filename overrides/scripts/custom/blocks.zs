@@ -52,13 +52,15 @@ val Ore_block_drops as DropHandler[string] = {
 	"quartz_ore" : function(drops, world, position, state, fortune) {
 		drops.clear();
 		drops.add(<item:minecraft:quartz>);
-		drops.add(<item:contenttweaker:amethyst_gem> % 10);
-		for i in 1 to (fortune) {
+		drops.add(<item:contenttweaker:amethyst_flawed> % 5);
+		drops.add(<item:contenttweaker:amethyst_gem> % 1);
+		for i in 1 to fortune {
 			drops.add((<item:minecraft:quartz> * 2) % 25);
-			drops.add(<item:contenttweaker:amethyst_gem> % 5);
-		}
-		if (fortune>=3) {
-			drops.add((<item:contenttweaker:amethyst_gem> * 2) % 3);
+			drops.add(<item:contenttweaker:amethyst_flawed> % 3);
+			drops.add(<item:contenttweaker:amethyst_gem> % 1);
+			if (i>=3) {
+				drops.add((<item:contenttweaker:amethyst_flawed> * 2) % 1);
+			}
 		}
 		return;
 	}

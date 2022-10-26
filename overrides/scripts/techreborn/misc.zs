@@ -45,7 +45,7 @@ val Recipes_shaped = {
 		 [<contenttweaker:gold_foil>, <contenttweaker:gold_foil>, <contenttweaker:gold_foil>]],
 	<chickenchunks:chunk_loader> :
 		[[<chickenchunks:chunk_loader:1>, <tconstruct:materials:10>, <chickenchunks:chunk_loader:1>],
-		 [<chickenchunks:chunk_loader:1>, <techreborn:machine_casing> | <techreborn:machine_frame:1>, <chickenchunks:chunk_loader:1>],
+		 [<chickenchunks:chunk_loader:1>, <techreborn:machine_frame:1>, <chickenchunks:chunk_loader:1>],
 		 [<chickenchunks:chunk_loader:1>, redstone_alloy_plate, <chickenchunks:chunk_loader:1>]],
 	<techreborn:irondrill> : 
 		[[null, <enderio:item_alloy_endergy_ingot>, null],
@@ -155,4 +155,5 @@ for i in removed_cable_craftings {
 furnace.addRecipe(<nuclearcraft:part:6>, <contenttweaker:rough_plastic_plate>, 10);
 
 furnace.remove(<techreborn:ingot:3>);
+furnace.remove(<techreborn:ingot:15>);
 

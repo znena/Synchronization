@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/2
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -22,6 +22,11 @@ val Recipes = {
 			[[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>],
 			 [<ore:ingotCrudeSteel>, <techreborn:machine_casing>, <ore:ingotCrudeSteel>],
 			 [<ore:circuitT3>, <ore:craftingPiston>, <ore:circuitT3>]]
+		],
+		<chickenchunks:chunk_loader:1> : [
+			[[null, <contenttweaker:amethyst_gem>, null],
+			 [<ore:ingotCrudeSteel>, <techreborn:machine_casing>, <ore:ingotCrudeSteel>],
+			 [<ore:plateObsidian>, <ore:plateObsidian>, <ore:plateObsidian>]]
 		]
 	},
 	ageId(2) : {

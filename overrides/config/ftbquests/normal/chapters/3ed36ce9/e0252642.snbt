@@ -1,0 +1,20 @@
+{
+	title: "后记",
+	x: 12.5d,
+	y: 0.0d,
+	description: "传奇矿工",
+	text: [
+		"至此，你解锁了整合包中的所有矿物。"
+	],
+	dependencies: [
+		"0aa09c79"
+	],
+	hide: true,
+	tasks: [{
+		uid: "56f2c921",
+		type: "item",
+		items: [{
+			item: "libvulpes:ore0"
+		}]
+	}]
+}

@@ -3,8 +3,8 @@
 	y: 1.0d,
 	description: "电力存储 Lv.1",
 	dependencies: [
-		"04fedc1a",
 		"305c3bd5",
+		"c1edc956",
 		"f7c0fe83"
 	],
 	hide: true,

@@ -29,7 +29,7 @@
 		items: [{
 			item: "nuclearcraft:ingot 1 5"
 		}],
-		count: 8L,
+		count: 16L,
 		consume_items: true
 	}],
 	rewards: [{

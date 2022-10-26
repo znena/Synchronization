@@ -1,12 +1,11 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/26
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
-import scripts.gamestages.ageId as ageId;
 
 
 val Recipes = {
-	<contenttweaker:rough_plastic_rod> : [
+	<contenttweaker:rough_plastic_rod> * 2 : [
 		[[<minecraft:shears>.anyDamage().transformDamage(3), <nuclearcraft:part:6>]]
 	],
 	<contenttweaker:refined_iron_hammer> : [
@@ -39,10 +38,4 @@ for o, rs in Recipes {
 	}
 }
 
-
-val lava_cell = <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "lava", Amount: 1000}}) as IIngredient;
-
-recipes.addShapeless("main/flux_fuel", <contenttweaker:flux_fuel>, 
-		[lava_cell.giveBack(), <ore:coal>, <ore:dustSmallRedstone>]);
 furnace.setFuel(<contenttweaker:flux_fuel>, 18000);
-

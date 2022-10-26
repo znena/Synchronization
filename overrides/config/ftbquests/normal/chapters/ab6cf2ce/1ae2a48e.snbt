@@ -1,7 +1,10 @@
 {
 	x: 23.0d,
 	y: -4.0d,
-	description: "替代钢",
+	description: "原始钢材",
+	text: [
+		""
+	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"4623e95f",

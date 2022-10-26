@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/2
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -41,10 +41,11 @@ val Recipes = [
 	R(<ore:dustIridium>, null, <techreborn:ingot:7>, null, 128, 900, 7),
 	R(<ore:dustTungsten>, null, <techreborn:ingot:15>, null, 192, 1200, 15),
 	R(<enderio:item_alloy_endergy_ingot>, <enderio:item_material:23> * 2, <techreborn:nuggets:12> * 3, <techreborn:dust:15>, 32, 300, 0),
-	R(<ore:ingotTungsten>, <ore:ingotSteel>, <techreborn:nuggets:16> * 3, <techreborn:dust:15> * 2, 256, 600, 20),
+	R(<ore:ingotTungsten>, <ore:ingotSteel>, <techreborn:nuggets:16> * 3, <techreborn:dust:15> * 2, 32, 180, 0),
 	R(silicon_cell * 2, null, <techreborn:plates:11>, <techreborn:dust:15> * 2, 256, 600, 20),
-	R(<enderio:item_material:20> * 4, null, <techreborn:ingot:17> * 2, <techreborn:dynamiccell> * 2, 32, 300, 5),
-	R(<enderio:item_alloy_ingot:2> * 8, <techreborn:dynamiccell>, vibrant_alloy_cell, null, 64, 300, 3)
+	R(<techreborn:ingot:17> * 3, <enderio:item_material:20> * 2, <enderio:item_material:20> * 4, <techreborn:nuggets:16> * 9, 256, 1200, 21),
+	R(<enderio:item_alloy_ingot:2> * 8, <techreborn:dynamiccell>, vibrant_alloy_cell, null, 64, 300, 3),
+	R(<techreborn:ingot:12>, <enderio:item_material:5> * 8, <enderio:item_alloy_ingot>, null, 8, 480, 2)
 ] as R[];
 
 for i in Recipes {

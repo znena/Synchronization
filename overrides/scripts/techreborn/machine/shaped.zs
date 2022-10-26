@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/15
+// TR: Sync Scripts | 22/10/22
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -23,11 +23,6 @@ val Recipes = {
 		 [<enderio:item_material:9>, <techreborn:machine_frame>, <enderio:item_material:9>],
 		 [<ore:craftingPiston>, <ore:circuitT2>, <ore:craftingPiston>]]
 	],
-	<techreborn:machine_casing> : [
-		[[<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>],
-		 [<ore:circuitT2>, <techreborn:machine_frame>, <ore:circuitT2>],
-		 [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]
-	],
 	<techreborn:low_voltage_su> : [
 		[[<ore:plankWood>, <techreborn:cable:5>, <ore:plankWood>],
 		 [<techreborn:rebattery>, <techreborn:rebattery>, <techreborn:rebattery>],
@@ -35,6 +30,16 @@ val Recipes = {
 		[[<ore:plankWood>, <ore:ingotSilver>, <ore:plankWood>],
 		 [<techreborn:rebattery>, <techreborn:rebattery>, <techreborn:rebattery>],
 		 [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]
+	],
+	<techreborn:machine_casing> : [
+		[[<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>],
+		 [<ore:circuitT2>, <techreborn:machine_frame>, <ore:circuitT2>],
+		 [<techreborn:plates:35>, <techreborn:plates:35>, <techreborn:plates:35>]]
+	],
+	<techreborn:machine_frame:1> : [
+		[[<ore:plateCarbon>, <ore:plateAdvancedAlloy>, <ore:plateCarbon>],
+		 [<ore:circuitT2>, <techreborn:machine_casing>, <ore:circuitT2>],
+		 [<ore:plateCarbon>, <ore:plateAdvancedAlloy>, <ore:plateCarbon>]]
 	]
 } as IIngredient[][][][IItemStack];
 

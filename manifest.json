@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Synchronization",
-  "version": "0.1 Testing III Pre",
+  "version": "0.1 Testing III",
   "author": "BluSunrize",
   "files": [
     {
@@ -227,6 +227,11 @@
     {
       "projectID": 243883,
       "fileID": 2755785,
+      "required": true
+    },
+    {
+      "projectID": 242223,
+      "fileID": 3524685,
       "required": true
     },
     {

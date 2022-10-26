@@ -26,6 +26,7 @@ var Recipes = {
 	<improvedextraction:ore_cluster:5> : <techreborn:smalldust:29> * 2,
 	<nuclearcraft:ore:3> : <techreborn:smalldust:67>,
 	<nuclearcraft:ore:4> : <techreborn:smalldust:68>,
+	<contenttweaker:tetrahedrite_ore> : <techreborn:smalldust:14>,
 	<contenttweaker:cassiterite_ore> : <techreborn:smalldust:53>
 } as IItemStack[IIngredient];
 
@@ -37,13 +38,8 @@ val EU_Costs = {
 	<enderio:item_alloy_ingot:7> : [600, 8],
 	<improvedextraction:ore_cluster> : [300, 4],
 	<improvedextraction:ore_cluster:1> : [300, 4],
-	<improvedextraction:ore_cluster:2> : [300, 8],
-	<improvedextraction:ore_cluster:3> : [300, 8],
-	<improvedextraction:ore_cluster:4> : [300, 8],
-	<improvedextraction:ore_cluster:5> : [300, 8],
 	<nuclearcraft:ore:3> : [600, 8],
-	<nuclearcraft:ore:4> : [600, 8],
-	<contenttweaker:cassiterite_ore> : [300, 8]
+	<nuclearcraft:ore:4> : [600, 8]
 } as int[][IIngredient];
 
 val Moded_Items = {
@@ -68,6 +64,10 @@ if (Moded_Items has pack_mode) {
 }
 
 for i, o in Recipes {
-	grinder.addRecipe(o, i, EU_Costs[i][0], EU_Costs[i][1] * eu_cost_multiplier);
+	if (EU_Costs has i) {
+		grinder.addRecipe(o, i, EU_Costs[i][0], EU_Costs[i][1] * eu_cost_multiplier);
+	} else {
+		grinder.addRecipe(o, i, 300, 8 * eu_cost_multiplier);
+	}
 }
 

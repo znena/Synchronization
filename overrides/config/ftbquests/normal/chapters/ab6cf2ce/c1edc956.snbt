@@ -1,0 +1,15 @@
+{
+	x: 3.0d,
+	y: 2.0d,
+	description: "能量之源",
+	dependencies: [
+		"04fedc1a"
+	],
+	tasks: [{
+		uid: "74892a2a",
+		type: "item",
+		items: [{
+			item: "fluxnetworks:flux"
+		}]
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "服务器设置",
+	icon: "minecraft:structure_void",
+	x: 8.0d,
+	y: 0.0d,
+	shape: "gear",
+	description: "你不应看到这的",
+	text: [
+		"指令 /sync gozec 被设定为用来连接统计服务器以总览游戏数据。",
+		"",
+		"关于此功能的使用请访问我们的官网。"
+	],
+	min_required_dependencies: 2,
+	dependencies: [
+		"2f4a73e4"
+	],
+	hide: true,
+	size: 1.25d,
+	optional: true,
+	tasks: [{
+		uid: "08080044",
+		type: "checkmark"
+	}]
+}
