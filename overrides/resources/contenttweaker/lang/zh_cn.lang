@@ -1,8 +1,9 @@
-# TR: Sync Lang zh_cn | 22/10/22
+# TR: Sync Lang zh_cn | 22/10/30
 item.contenttweaker.boron_nugget.name=硼粒
 item.contenttweaker.lithium_nugget.name=锂粒
 item.contenttweaker.magnesium_nugget.name=镁粒
 item.contenttweaker.rough_plastic_plate.name=粗塑料片
+item.contenttweaker.crude_steel_plate.name=粗钢板
 item.contenttweaker.rough_energetic_alloy_ingot.name=粗充能合金锭
 item.contenttweaker.rough_plastic_rod.name=塑料杆
 item.contenttweaker.calcite_dust.name=方解石粉

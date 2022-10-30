@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/1
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 
@@ -17,8 +17,9 @@ val PlanksCraftingNum = [[1, 2], [1, 2], [1, 2], [1, 3],
 		[1, 2], [1, 3], [2, 4], [5, 7], [4, 5], [3, 5]] as int[][];
 
 val axe = <minecraft:iron_axe>.anyDamage().transformDamage(3) | 
-		<minecraft:golden_axe>.reuse() | 
-		<minecraft:diamond_axe>.anyDamage().transformDamage(1);
+		<techreborn:bronzeaxe>.anyDamage().transformDamage(2) | 
+		<nuclearcraft:axe_boron>.anyDamage().transformDamage(1) | 
+		<minecraft:golden_axe>.reuse();
 
 for i in 0 to 7 {
 	recipes.remove(Planks[i].anyAmount());

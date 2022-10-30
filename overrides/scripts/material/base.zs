@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/21
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -46,23 +46,24 @@ for n, i in Recipes {
 // Alloy Smelter
 
 val AS_Recipes_in = [
-	[<techreborn:dust:39>, <techreborn:dust:39>],
+	[<techreborn:dust:39> * 2, <ore:dustObsidian>],
 	[<techreborn:dust:50> * 2, <techreborn:dust:50> * 2],
 	[<contenttweaker:iron_ore_dust> * 4, <techreborn:smalldust:13>]
 ] as IIngredient[][];
 
 val AS_Recipes_out = [
 	{
-		"easy" : <minecraft:iron_ingot> * 2,
-		"default" : <techreborn:nuggets:23> * 12,
-		"expert" : <techreborn:nuggets:19> * 2
+		"easy" : <techreborn:dust:27> * 12,
+		"default" : <techreborn:dust:27> * 8,
+		"expert" : <techreborn:dust:27> * 6
 	},
 	{
-		"easy" : <techreborn:nuggets:18> * 2,
-		"default" : <techreborn:nuggets:18>
+		"easy" : <techreborn:nuggets:18> * 3,
+		"default" : <techreborn:nuggets:18> * 2
 	},
 	{
-		"default" : <techreborn:ingot:19>
+		"default" : <techreborn:ingot:19>,
+		"expert" : <techreborn:nuggets:18> * 8
 	}
 ] as IItemStack[string][];
 

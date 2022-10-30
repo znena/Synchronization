@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/17
+// TR: Sync Scripts | 22/10/30
 #priority 1
 
 import crafttweaker.item.IItemStack;
@@ -26,6 +26,7 @@ val Recipes = {
 	<ore:ingotSteel> : <techreborn:plates:29>,
 	<ore:ingotBrass> : <techreborn:plates:18>,
 	<ore:ingotInvar> : <techreborn:plates:23>,
+	<ore:ingotCrudeSteel> : <contenttweaker:crude_steel_plate>,
 	<ore:plateGold> : <contenttweaker:gold_foil> * 2,
 	<ore:plateTin> : <techreborn:dynamiccell> * 2
 } as IItemStack[IIngredient];

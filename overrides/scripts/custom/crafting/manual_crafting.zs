@@ -37,6 +37,7 @@ val DustRecipes = {
 	<ore:ingotTin> : <techreborn:dust:53>,
 	<ore:ingotLead> : <techreborn:dust:29>,
 	<ore:ingotSilver> : <techreborn:dust:47>,
+	<ore:ingotGold> : <techreborn:dust:24>,
 	<ore:ingotRefinedIron> : <contenttweaker:refined_iron_dust>,
 	<ore:ingotBronze> : <techreborn:dust:7>,
 	<ore:ingotElectrum> : <techreborn:dust:17>,

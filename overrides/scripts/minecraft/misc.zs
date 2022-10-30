@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/14
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -68,6 +68,16 @@ val ShapedRecipes = {
 	],
 	<minecraft:paper> : [
 		[[<minecraft:reeds>, <minecraft:reeds>, <minecraft:reeds>]]
+	],
+	<minecraft:iron_ingot> : [
+		[[<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
+		 [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
+		 [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>]],
+		[[<techreborn:nuggets:19>, <techreborn:nuggets:19>, <techreborn:nuggets:19>],
+		 [<techreborn:nuggets:19>, <techreborn:nuggets:19>, <techreborn:nuggets:19>]]
+	],
+	<minecraft:golden_carrot> : [
+		[[<minecraft:carrot>, <contenttweaker:gold_foil>]]
 	]
 } as IIngredient[][][][IItemStack];
 

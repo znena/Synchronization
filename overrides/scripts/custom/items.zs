@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 #loader contenttweaker
 #priority 101
 
@@ -48,6 +48,7 @@ val Mat_colors = {
 	"rough_energetic_alloy" : 0xffc000,
 	"rough_plastic" : 0x40384a,
 	"amethyst" : 0x8000f0,
+	"crude_steel" : 0xcccccc
 } as int[string];
 
 val Item_mats = {
@@ -58,7 +59,8 @@ val Item_mats = {
 		"amethyst"
 	],
 	"plate" : [
-		"rough_plastic"
+		"rough_plastic",
+		"crude_steel"
 	],
 	"dust" : [
 		"conductive_iron",

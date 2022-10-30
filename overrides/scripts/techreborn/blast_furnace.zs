@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -44,7 +44,6 @@ val Recipes = [
 	R(<ore:ingotTungsten>, <ore:ingotSteel>, <techreborn:nuggets:16> * 3, <techreborn:dust:15> * 2, 32, 180, 0),
 	R(silicon_cell * 2, null, <techreborn:plates:11>, <techreborn:dust:15> * 2, 256, 600, 20),
 	R(<techreborn:ingot:17> * 3, <enderio:item_material:20> * 2, <enderio:item_material:20> * 4, <techreborn:nuggets:16> * 9, 256, 1200, 21),
-	R(<enderio:item_alloy_ingot:2> * 8, <techreborn:dynamiccell>, vibrant_alloy_cell, null, 64, 300, 3),
 	R(<techreborn:ingot:12>, <enderio:item_material:5> * 8, <enderio:item_alloy_ingot>, null, 8, 480, 2)
 ] as R[];
 

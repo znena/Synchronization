@@ -100,8 +100,8 @@
       "blockName": "tile.techreborn.ore",
       "blockNiceName": "Pyrite",
       "meta": 5,
-      "veinSize": 8,
-      "veinsPerChunk": 3,
+      "veinSize": 10,
+      "veinsPerChunk": 4,
       "minYHeight": 10,
       "maxYHeight": 126,
       "shouldSpawn": true
@@ -120,10 +120,10 @@
       "blockName": "tile.techreborn.ore",
       "blockNiceName": "Sphalerite",
       "meta": 7,
-      "veinSize": 6,
+      "veinSize": 8,
       "veinsPerChunk": 1,
       "minYHeight": 10,
-      "maxYHeight": 126,
+      "maxYHeight": 80,
       "shouldSpawn": true
     }
   ],
