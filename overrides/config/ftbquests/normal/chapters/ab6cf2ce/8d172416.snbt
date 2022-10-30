@@ -1,0 +1,15 @@
+{
+	x: 15.5d,
+	y: 2.0d,
+	dependencies: [
+		"770d0316"
+	],
+	hide: true,
+	tasks: [{
+		uid: "b05b5765",
+		type: "item",
+		items: [{
+			item: "techreborn:solid_canning_machine"
+		}]
+	}]
+}
