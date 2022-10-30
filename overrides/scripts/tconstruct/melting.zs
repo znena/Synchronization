@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
@@ -11,7 +11,9 @@ val S_Recipes = {
 	<minecraft:porkchop> : <liquid:gelatin> * 576,
 	<nuclearcraft:ore:5> : <liquid:boron> * 48,
 	<nuclearcraft:ore:6> : <liquid:lithium> * 32,
-	<nuclearcraft:ore:7> : <liquid:magnesium> * 32
+	<nuclearcraft:ore:7> : <liquid:magnesium> * 32,
+	<tconstruct:materials> : <liquid:stone> * 72,
+	<tconstruct:seared:0> : <liquid:stone> * 144
 } as ILiquidStack[IItemStack];
 
 var S_Temp = {

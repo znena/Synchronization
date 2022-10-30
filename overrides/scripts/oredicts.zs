@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -29,6 +29,7 @@ val Adds = {
 	<ore:oreRedstone> : [<contenttweaker:redstone_ore>],
 	<ore:oreLapis> : [<contenttweaker:lapis_ore>],
 	
+	<ore:plateCrudeSteel> : [<contenttweaker:crude_steel_plate>],
 	<ore:dustPurifiedCarbon> : [<enderio:item_material:23>],
 	<ore:gemAmethyst> : [<contenttweaker:amethyst_gem>],
 	<ore:circuitT1> : [<techreborn:part:40>],

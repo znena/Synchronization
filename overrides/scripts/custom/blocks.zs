@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 #loader contenttweaker
 #priority 100
 
@@ -13,7 +13,7 @@ val Ore_block_property as float[][string] = {
 	"basalt" : [6.0, 15.0, 2],
 	"weathered_stone" : [1.5, 5.0, 0],
 	"tetrahedrite_ore" : [4.0, 15.0, 2],
-	"cassiterite_ore" : [4.0, 15.0, 2],
+	"cassiterite_ore" : [3.0, 15.0, 2],
 	"gold_ore" : [3.0, 15.0, 2],
 	"diamond_ore" : [4.5, 15.0, 2],
 	"redstone_ore" : [3.0, 15.0, 2],

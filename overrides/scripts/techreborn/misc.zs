@@ -1,8 +1,10 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemDefinition;
+import mods.techreborn.industrialElectrolyzer;
+import mods.techreborn.centrifuge;
 
 // Remove and Shaped
 
@@ -156,4 +158,7 @@ furnace.addRecipe(<nuclearcraft:part:6>, <contenttweaker:rough_plastic_plate>, 1
 
 furnace.remove(<techreborn:ingot:3>);
 furnace.remove(<techreborn:ingot:15>);
+
+industrialElectrolyzer.removeInputRecipe(<techreborn:dust:12>);
+centrifuge.removeInputRecipe(<minecraft:golden_carrot>, <techreborn:dynamiccell>);
 

@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/2
+// TR: Sync Scripts | 22/10/30
 #priority 997
 
 import crafttweaker.item.IItemStack;
@@ -32,8 +32,9 @@ val aged_items = {
 		<nuclearcraft:chest_boron>, <nuclearcraft:legs_boron>, <nuclearcraft:boots_boron>,
 		<enderio:item_xp_transfer>,
 		<enderio:block_tank>,
-		<enderio:block_fused_quartz:*>,
-		<enderio:item_material:5>, <enderio:item_material:38>,
+		<enderio:block_fused_quartz:*>, <enderio:block_fused_glass:*>,
+		<enderio:item_material:5>,
+		<enderio:item_material:38>, <enderio:item_material:3>,
 		<enderio:item_material:4>, <enderio:item_material:22>,
 		<enderio:item_material:9>, <enderio:item_material:10>,
 		<enderio:item_item_conduit>,
@@ -45,7 +46,8 @@ val aged_items = {
 		<enderio:item_alloy_ingot:9>, <enderio:item_alloy_nugget:9>,
 		<enderio:item_alloy_nugget:3>, <enderio:item_alloy_ingot:3>,
 		<enderio:item_alloy_nugget>, <enderio:item_alloy_ingot>,
-		<enderio:item_alloy_endergy_nugget>, <enderio:item_alloy_endergy_ingot>
+		<enderio:item_alloy_endergy_nugget>, <enderio:item_alloy_endergy_ingot>,
+		<enderio:block_simple_stirling_generator>
 	],
 	ageId(1) : [
 		<techreborn:industrial_blast_furnace>,
@@ -59,6 +61,9 @@ val aged_items = {
 	],
 	ageId(0, 3) : [
 		<tconstruct:toolforge>
+	],
+	ageId(1, 2) : [
+		<techreborn:iron_alloy_furnace>
 	]
 } as IIngredient[][string];
 

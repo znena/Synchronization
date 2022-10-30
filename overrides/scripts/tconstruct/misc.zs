@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/16
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -24,6 +24,11 @@ val Recipes = {
 		[[null, <ore:pattern>, null],
 		 [<ore:pattern>, <tconstruct:tooltables>, null],
 		 [null, <ore:pattern>, null]]
+	],
+	<tconstruct:seared_glass> : [
+		[[null, <tconstruct:materials>, null],
+		 [<tconstruct:materials>, <ore:fusedGlass>, <tconstruct:materials>],
+		 [null, <tconstruct:materials>, null]]
 	]
 } as IIngredient[][][][IItemStack];
 
@@ -47,4 +52,5 @@ recipes.addShapeless("tcon/pattern", <tconstruct:pattern>, [<ore:pattern>]);
 
 recipes.remove(<tconstruct:slimesling:*>, <tconstruct:slime_boots:*>);
 
+recipes.removeByRecipeName("tconstruct:smeltery/seared/bricks/paver_bricks_default");
 

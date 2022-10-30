@@ -1,4 +1,4 @@
-// TR: Sync Scripts | 22/10/22
+// TR: Sync Scripts | 22/10/30
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -13,20 +13,25 @@ val Recipes = {
 			 [<contenttweaker:basalt>, <techreborn:part:41>, <contenttweaker:basalt>]]
 		],
 		<techreborn:solar_panel> : [],
-		<techreborn:solar_panel> * 2 : [
-			[[<ore:fusedQuartz>, <ore:fusedQuartz>, <ore:fusedQuartz>],
-			 [<ore:fusedQuartz>, <enderio:item_material:38>, <ore:fusedQuartz>],
-			 [<techreborn:part:29>, <techreborn:solid_fuel_generator>, <techreborn:part:29>]]
+		<techreborn:solar_panel> * 3 : [
+			[[<ore:fusedQuartz>, <ore:fusedGlass>, <ore:fusedQuartz>],
+			 [<ore:plateCrudeSteel>, <enderio:item_material:3>, <ore:plateCrudeSteel>],
+			 [<enderio:item_material:9>, <techreborn:solid_fuel_generator>, <techreborn:part:29>]]
 		],
 		<techreborn:assembling_machine> : [
-			[[<ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>, <ore:ingotCrudeSteel>],
-			 [<ore:ingotCrudeSteel>, <techreborn:machine_casing>, <ore:ingotCrudeSteel>],
+			[[<ore:plateCrudeSteel>, <ore:plateCrudeSteel>, <ore:plateCrudeSteel>],
+			 [<ore:plateCrudeSteel>, <techreborn:machine_casing>, <ore:plateCrudeSteel>],
 			 [<ore:circuitT3>, <ore:craftingPiston>, <ore:circuitT3>]]
 		],
 		<chickenchunks:chunk_loader:1> : [
 			[[null, <contenttweaker:amethyst_gem>, null],
 			 [<ore:ingotCrudeSteel>, <techreborn:machine_casing>, <ore:ingotCrudeSteel>],
 			 [<ore:plateObsidian>, <ore:plateObsidian>, <ore:plateObsidian>]]
+		],
+		<enderio:block_simple_stirling_generator> : [
+			[[<ore:plateCrudeSteel>, <ore:plateBrass>, <ore:plateCrudeSteel>],
+			 [<ore:plateCrudeSteel>, <tconstruct:seared_glass>, <ore:plateCrudeSteel>],
+			 [<enderio:item_material:9>, <techreborn:solid_fuel_generator>, <techreborn:part:29>]]
 		]
 	},
 	ageId(2) : {
